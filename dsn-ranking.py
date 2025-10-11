@@ -1,12 +1,15 @@
 import re
 import os
+import traceback
+
 import dblp
 import json
 import time
 import datetime
+import pickle
 
 ## Constants
-OUTPUT_DIR = './output-new'           # Output directory
+OUTPUT_DIR = './output'               # Output directory
 MIN_PAGES = 4                         # Min pages for a paper
 MATCH = ['DSN', 'FTCS']               # Venues considered
 # DOI considered (to filter out workshops)
@@ -15,8 +18,8 @@ MATCH_DOI = [
     '10\.1109/ICDSN\.{}\.([0-9]+)',
     '10\.1109/DSN\.{}\.([0-9]+)',
     '10\.1109\/FTCS\.{}\.([0-9]+)']
-# RECENT = 2014                        # Year for recent papers --- change: no hard coding required, figured out from DBLP
 RECENT_YEARS = 5                       # Number years span used to consider a publication as 'recent'
+WAIT_TIME = 5                          # Wait time in seconds. We are throttling the connections with dblp to avoid being soft ban
 
 ## Global Variables
 authorList = {}
@@ -99,8 +102,12 @@ def filter_papers(pub, venue):
                 if match != None:
                 # if doi.format(year) in pub["doi"]:
                     return True
-            except:
+            except KeyError as e:
                 # if the paper does not have a doi
+                print(f"DOI not found for {pub}")
+                return True
+            except Exception as e:
+                print(f"DOI:{pub['doi']} does not match for {pub}")
                 return True
 
     return False
@@ -117,27 +124,34 @@ def get_authors(venue):
     papers=0
     results = dblp.search_pub(venue)
 
-    hits = json.loads(results)["result"]["hits"]
+    try:
+        hits = json.loads(results)["result"]["hits"]
 
-    # No hits for the `conf/dsn/{}".format(year)`
-    # Most probably either the venue prefix is wrong or there are not paper selected year for the current year
-    if "hit" not in hits:
-        return 0
+        # No hits for the `conf/dsn/{}".format(year)`
+        # Most probably either the venue prefix is wrong or there are no paper selected for the current year
+        if "hit" not in hits:
+            return 0
 
-    for i in hits["hit"]:
-        info = i["info"]
-        if  filter_papers(info, venue):
-            papers+=1
-            # print(info)
-            if 'authors' in info:
-                if isinstance(info["authors"]["author"], list):
-                    for author in info["authors"]["author"]:
+        for i in hits["hit"]:
+            info = i["info"]
+            if  filter_papers(info, venue):
+                papers+=1
+                # print(info)
+                if 'authors' in info:
+                    if isinstance(info["authors"]["author"], list):
+                        # Multiple collaborators
+                        for author in info["authors"]["author"]:
+                            update_authors(author["@pid"], author["text"], info["key"])
+                    else:
+                        # Solo author
+                        author = info["authors"]["author"]
                         update_authors(author["@pid"], author["text"], info["key"])
-                else:
-                    author = info["authors"]["author"]
-                    update_authors(author["@pid"], author["text"], info["key"])
 
-    return papers
+        return papers
+
+    except:
+        traceback.print_exc()
+        return 0
 
 def usage():
     """Print out script usage.
@@ -151,13 +165,36 @@ def usage():
 
     return True
 
+def persist_authors(authors: dict, filename: str):
+    """Persists authorList as a JSON file.
+    Args:
+        authors: dict with the list of authors
+        filename: filename of the JSON file
 
+    Returns:
+
+    """
+
+    # Prepare dict for serialization
+    serializable_dict = {}
+
+    for key, value in authors.items():
+        value['pubs'] = list(value['pubs'])
+        value['pid'] = key
+        serializable_dict[key] = value
+
+    # Dump data to JSON file
+    try:
+        with open(filename, 'w') as f:
+            json.dump(serializable_dict, f, indent=4)
+        print(f"Author list was successfully save to {filename}")
+    except TypeError as e:
+        print(f"Error trying to save author list: {e}")
 
 def main():
     """Main Function
     Returns:
         None
-
     """
 
     if not usage():
@@ -169,7 +206,6 @@ def main():
     global RECENT
     RECENT = cyear - RECENT_YEARS
 
-
     print ('Last: {} | Recent papers since: {}'.format(cyear-1, RECENT))
 
     outFile = open(OUTPUT_DIR + '/dsnHOF-' + time.strftime("%Y%m%d-%H%M%S"), mode='a', encoding='utf-8')
@@ -177,12 +213,17 @@ def main():
     # FTCS (1988-1999)
     print ('Processing FTCS (1988, 1999)')
     for year in range(1988,2000):
+        time.sleep(WAIT_TIME)
         print(" * Processing year {}: {}".format(year, get_authors("conf/ftcs/{}".format(year))))
 
     # DSN (2000-now)
     print ('Processing DSN (2000, %d)' % (cyear-1))
     for year in range(2000,cyear):
+        time.sleep(WAIT_TIME)
         print(" * Processing year {}: {}".format(year, get_authors("conf/dsn/{}".format(year))))
+
+    # Checkpoint
+    persist_authors(authorList, "authorlist.json")
 
     for pid in authorList:
         author = authorList[pid]
@@ -194,6 +235,7 @@ def main():
 
     outFile.flush()
 
+    # Getting author's data
     # Sort by total publications
     rank=1
     last_total=0
@@ -204,13 +246,18 @@ def main():
         if i > 90000 and last_total != value['total']:
             break
 
+        if rank > 200:
+            break
+
         if last_total != value['total']: rank = i
+
         try:
             affiliation = dblp.get_affiliation(key, value['name'])
-        except Exception as e:
+            time.sleep(WAIT_TIME)
+        except:
             affiliation = "Unknown"
-            print ('{} {}: affiliation not found. Error {}' % 
-                key, value['name'], e)
+            print ('{} {}: affiliation not found.'.format(key, value['name']))
+            traceback.print_exc()
 
         print(f"""{rank}\t{key}\t{value['name']}\t{value['total']}\t{value['recent']}\t{affiliation}""")
         # print ('{}\t{}\t{}\t{}\t{}\t{}\t{}'.format(i, rank, key, value['name'], value['total'], value['recent'], affiliation))
@@ -227,6 +274,7 @@ def main():
         i+=1
         last_total = value['total']
 
+    print("Saving ranking.json...")
     with open('./ranking.json', mode='w', encoding='utf-8') as jsonFile:
         json.dump(data, jsonFile, indent=4)
 
@@ -247,7 +295,7 @@ def test():
         print(entry)
         print(f"{entry['ikey']}, {entry['name']}: {dblp.get_affiliation(entry['ikey'], entry['name'])}")
 
-
 if __name__ == '__main__':
-    # main()
-    test()
+    main()
+    # test()
+    print("Done!")
