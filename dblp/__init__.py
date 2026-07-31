@@ -1,4 +1,5 @@
 import json
+import time
 import requests
 from lxml import etree
 from collections import namedtuple
@@ -173,92 +174,125 @@ class Publication(LazyAPIData):
                     print("ERROR: failed to connect to DBLP 5+ times for"+str(self.key)+", skipping")
                     passFail2 = 1
 
-def search_pub(pub_str):
-    timeOutCount3 = 0
-    passFail3 = 0
-    while (passFail3 == 0):
+def _get_with_retries(url, params, context):
+    """GET `url` with `params`, retrying up to 5 times if requests.get
+    raises (timeout, connection reset, etc). Returns the response, or
+    None if every attempt failed.
+    """
+    timeoutCount = 0
+    while True:
         try:
-            resp = requests.get(DBLP_PUBL_SEARCH_URL, params={'q':pub_str, 'format': 'json', 'h': 1000})
-            passFail3 = 1
-        # if connection times out, try again until it works or failed 5 times
-        except:
-            if (timeoutCount3 < 5):
-                passFail3 = 0
-                timeoutCount3 = timeoutCount3 + 1
-            else:
-                print("ERROR: failed to connect to DBLP 5+ times for"+str(pub_str)+", skipping")
-                passFail3 = 1
+            return requests.get(url, params=params)
+        except Exception:
+            timeoutCount += 1
+            if timeoutCount >= 5:
+                print("ERROR: failed to connect to DBLP 5+ times for" + str(context) + ", skipping")
+                return None
 
-    return resp.text
+def search_pub(pub_str):
+    """Search dblp for publications matching `pub_str` (e.g. 'conf/dsn/2023').
+
+    dblp's search API caps each response at 100 hits regardless of the
+    requested `h`, so this pages through with the `f` offset parameter
+    until all hits are collected, then returns them merged into a single
+    JSON-encoded string shaped like a single-page response, so callers
+    don't need to know about the pagination. Returns None if the first
+    page can't be fetched after retrying.
+    """
+    page_size = 100
+    first = 0
+    total = None
+    all_hits = []
+
+    while True:
+        resp = _get_with_retries(
+            DBLP_PUBL_SEARCH_URL,
+            {'q': pub_str, 'format': 'json', 'h': page_size, 'f': first},
+            pub_str,
+        )
+        if resp is None:
+            return None
+
+        try:
+            hits = json.loads(resp.text)["result"]["hits"]
+        except (ValueError, KeyError, TypeError):
+            return None
+
+        if total is None:
+            total = int(hits.get("@total", 0))
+
+        all_hits.extend(hits.get("hit", []))
+
+        first += page_size
+        if first >= total or "hit" not in hits:
+            break
+
+        time.sleep(1)  # be polite to dblp between pages of the same year
+
+    merged_hits = {
+        "@total": str(total),
+        "@sent": str(len(all_hits)),
+        "@first": "0",
+    }
+    if all_hits:
+        merged_hits["hit"] = all_hits
+
+    return json.dumps({"result": {"hits": merged_hits}})
 
 def search(author_str):
-    timeoutCount3 = 0
-    passFail3 = 0
-    while (passFail3 == 0):
-        try:
-            resp = requests.get(DBLP_AUTHOR_SEARCH_URL, params={'xauthor':author_str})
-            passFail3 = 1
-        # if connection times out, try again until it works or failed 5 times
-        except:
-            if (timeoutCount3 < 5):
-                passFail3 = 0
-                timeoutCount3 = timeoutCount3 + 1
-            else:
-                print("ERROR: failed to connect to DBLP 5+ times for"+str(author_str)+", skipping")
-                passFail3 = 1
+    """Search dblp for authors matching `author_str`. Returns a list of
+    Author objects (homonym aliases are expanded into separate entries).
+    Returns an empty list if a request can't be completed after
+    retrying, or if the response can't be parsed.
+    """
+    resp = _get_with_retries(DBLP_AUTHOR_SEARCH_URL, {'xauthor': author_str}, author_str)
+    if resp is None:
+        return []
 
-    #TODO: Does this need to be a nested try-catch above with the resp?
-    #TODO: error handling
-    root = etree.fromstring(resp.content)
+    try:
+        root = etree.fromstring(resp.content)
+    except Exception:
+        return []
+
     arr_of_authors = []
     for urlpt in root.xpath('/authors/author/@urlpt'):
-        timeoutCount4 = 0
-        passFail4 = 0
-        while (passFail4 == 0):
-            try:
-                resp1 = requests.get(DBLP_PERSON_URL.format(urlpt=urlpt))
+        resp1 = _get_with_retries(DBLP_PERSON_URL.format(urlpt=urlpt), None, urlpt)
+        if resp1 is None:
+            continue
 
-                xml = resp1.content
-                root1 = etree.fromstring(xml)
-                if root1.xpath('/dblpperson/homonym/text()'):
-                    for hom_urlpt in root1.xpath('/dblpperson/homonym/text()'):
-                        arr_of_authors.append(Author(hom_urlpt))
-                else:
-                    arr_of_authors.append(Author(urlpt))
+        try:
+            root1 = etree.fromstring(resp1.content)
+        except Exception:
+            continue
 
-                passFail4 = 1
-
-            # if connection times out or string is empty, try again until it works or failed 5 times
-            except:
-                if (timeoutCount4 < 5):
-                    passFail4 = 0
-                    timeoutCount4 = timeoutCount4 + 1
-                else:
-                    print("ERROR: failed to connect to DBLP 5+ times for"+str(urlpt)+", skipping")
-                    passFail4 = 1
+        homonyms = root1.xpath('/dblpperson/homonym/text()')
+        if homonyms:
+            for hom_urlpt in homonyms:
+                arr_of_authors.append(Author(hom_urlpt))
+        else:
+            arr_of_authors.append(Author(urlpt))
 
     return arr_of_authors
 
 def get_affiliation(pid, author_str):
-    timeoutCount3 = 0
-    passFail3 = 0
-    # find all alias for the author
-    while (passFail3 == 0):
-        try:
-            resp = requests.get(DBLP_AUTHOR_SEARCH_URL2, params={'q': author_str, 'format': 'json', 'h': 1000})
-            passFail3 = 1
-        # if connection times out, try again until it works or failed 5 times
-        except:
-            if (timeoutCount3 < 5):
-                passFail3 = 0
-                timeoutCount3 = timeoutCount3 + 1
-            else:
-                print("ERROR: failed to connect to DBLP 5+ times for" + str(author_str) + ", skipping")
-                passFail3 = 1
+    """Look up `pid`'s affiliation by searching dblp for `author_str` and
+    matching the pid embedded in each hit's dblp profile URL. Returns ""
+    if no affiliation is found, including when dblp can't be reached
+    after retrying, or the response can't be parsed.
+    """
+    resp = _get_with_retries(
+        DBLP_AUTHOR_SEARCH_URL2, {'q': author_str, 'format': 'json', 'h': 1000}, author_str
+    )
+    if resp is None:
+        return ""
+
+    try:
+        hits = json.loads(resp.text)["result"]["hits"]
+    except (ValueError, KeyError, TypeError):
+        return ""
 
     affiliation = None
-    hits = json.loads(resp.text)["result"]["hits"]
-    for hit in hits["hit"]:
+    for hit in hits.get("hit", []):
         if "info" in hit:
             if "author" in hit["info"]:
                 if "aliases" in hit["info"]:
