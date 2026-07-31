@@ -176,18 +176,36 @@ class Publication(LazyAPIData):
 
 def _get_with_retries(url, params, context):
     """GET `url` with `params`, retrying up to 5 times if requests.get
-    raises (timeout, connection reset, etc). Returns the response, or
-    None if every attempt failed.
+    raises (timeout, connection reset, etc) or dblp responds with a
+    rate-limit/server-error status (429/5xx). Unlike outright request
+    failures, a 429 means dblp is asking us to slow down, so those
+    retries back off with an increasing delay instead of firing right
+    back. Returns the response, or None if every attempt failed.
     """
     timeoutCount = 0
+    backoff = 5
     while True:
         try:
-            return requests.get(url, params=params)
+            resp = requests.get(url, params=params)
         except Exception:
-            timeoutCount += 1
-            if timeoutCount >= 5:
-                print("ERROR: failed to connect to DBLP 5+ times for" + str(context) + ", skipping")
-                return None
+            resp = None
+
+        status = getattr(resp, "status_code", 200) if resp is not None else None
+
+        if resp is not None and status not in (429, 500, 502, 503, 504):
+            return resp
+
+        timeoutCount += 1
+        if timeoutCount >= 5:
+            print("ERROR: failed to connect to DBLP 5+ times for" + str(context) + ", skipping")
+            return None
+
+        if status == 429:
+            print(f"WARNING: dblp rate-limited us for {context}, backing off {backoff}s (attempt {timeoutCount}/5)")
+            time.sleep(backoff)
+            backoff *= 2
+        elif status is not None:
+            print(f"WARNING: dblp returned status {status} for {context}, retrying (attempt {timeoutCount}/5)")
 
 def search_pub(pub_str):
     """Search dblp for publications matching `pub_str` (e.g. 'conf/dsn/2023').
