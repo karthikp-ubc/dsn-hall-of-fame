@@ -76,6 +76,16 @@ the same `get_pub_year` / `get_year_breakdown` functions (defined once in
   (1, 2, 2, 4 — ties share a rank, the next rank skips accordingly) scoped to that
   range. The original all-time `rank`/`total` from `ranking.json` are preserved
   per-row as `allTimeRank`/`allTimeTotal` so the author modal can show both.
+- **Search narrows visibility, not ranking.** `app.js`'s `getVisibleRows()` runs
+  `logic.js`'s `filterBySearch` (author name or affiliation, entity-decoded,
+  case-insensitive substring match) on top of `getFilteredRows`'s output. Rank is
+  computed in `getFilteredRows` *before* the search filter is applied, so
+  searching only hides rows — it never renumbers anyone. "Top 5"/"Top 10" and the
+  Trend graph's per-year totals both read from `getVisibleRows()`, so they
+  respect an active search (e.g. "Top 5" while searching "MIT" picks the top 5
+  MIT-affiliated authors, not the global top 5); the Compare graph's actually
+  *plotted* lines come from `selectedAuthors` looked up in the full `dataByName`
+  map, so a checked author stays plotted even if a later search hides their row.
 - **Compare-mode color assignment is by entity, not by position.** `logic.js`'s
   `createColorAssigner` hands out palette colors in first-seen order and then
   never changes them — so if you deselect and reselect authors, or the sort order

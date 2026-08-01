@@ -40,10 +40,29 @@
 			text-transform: uppercase;
 			letter-spacing: 0.02em;
 		}
-		#controls select, #controls button {
+		#controls select, #controls button, #controls input[type="text"] {
 			font-family: inherit;
 			font-size: 14px;
 			padding: 6px 10px;
+		}
+		.search-row {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+		.search-row input {
+			border: 1px solid #c3c2b7;
+			border-radius: 4px;
+			width: 200px;
+		}
+		.search-row button {
+			border: 1px solid #c3c2b7;
+			background: #fcfcfb;
+			border-radius: 4px;
+			cursor: pointer;
+			padding: 4px 8px;
+			color: #52514e;
+			line-height: 1;
 		}
 		.preset-row { display: flex; gap: 6px; }
 		.preset-row button, #chartModeRow button {
@@ -170,6 +189,13 @@
 		<!-- Controls -->
 		<div class="w3-container w3-padding-large">
 			<div id="controls">
+				<div class="control-group">
+					<label for="searchInput">Search</label>
+					<div class="search-row">
+						<input type="text" id="searchInput" placeholder="Name or affiliation">
+						<button type="button" id="clearSearchBtn" aria-label="Clear search" style="display:none">&times;</button>
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="fromYear">From year</label>
 					<select id="fromYear"></select>

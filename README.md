@@ -23,6 +23,10 @@ browsers restrict `fetch()` for local files — a local server is more reliable.
 
 ## Features
 
+- **Search** — filter the table live by author name or affiliation. Narrows
+  which rows are shown (and what "Top 5"/"Top 10" and the Trend graph consider)
+  without renumbering anyone's rank — rank always reflects the full year-range
+  standings, not just the search results.
 - **Year-range filter** — a From/To year picker plus "All time / Last 5 years /
   Last 10 years" presets. Narrowing the range recomputes each author's paper
   count and rank for that range (with ties handled via standard competition
@@ -30,11 +34,13 @@ browsers restrict `fetch()` for local files — a local server is more reliable.
 - **Sortable table** — click any column header (Rank / Name / Papers /
   Affiliation) to sort; click again to reverse.
 - **Graph, with two modes:**
-  - *Trend* — total papers per year across all authors in the current range.
+  - *Trend* — total papers per year across all authors currently shown (i.e.
+    respecting the search box) in the current range.
   - *Compare* — up to 8 individually chosen authors' papers-per-year, overlaid.
     Select authors via the checkbox column, or use the "Top 5" / "Top 10"
-    quick-select buttons (based on papers in the current year range). A
-    selected author keeps their line color even as the selection changes.
+    quick-select buttons (based on papers in the current year range, among
+    currently-searched authors). A selected author keeps their line color even
+    as the selection changes.
 - **Author profile** — click any author's name to open their full publication
   history (all-time, independent of the current year-range filter) as a bar
   chart, alongside their all-time and in-range rank/paper count.
