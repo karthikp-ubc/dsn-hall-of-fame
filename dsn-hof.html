@@ -1,21 +1,124 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<meta charset="utf-8">
 	<title>DSN Hall of Fame</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
 	<style>
 		table {
 			border: 0pt solid black;
 			cellpadding: 0;
+			border-collapse: collapse;
+			width: 100%;
 		}
 		table th {border: 0.5px solid black; white-space: nowrap;}
 		table td {border: 0.5px solid black;}
-		.numerl {text-align: left;}
+		.numer1 {text-align: left;}
 		.numer2 {text-align: right;}
 		.numer3 {text-align: center;}
 		body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+		/* Controls */
+		#controls {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			gap: 24px;
+		}
+		#controls .control-group {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+		}
+		#controls label {
+			font-size: 12px;
+			font-weight: bold;
+			color: #52514e;
+			text-transform: uppercase;
+			letter-spacing: 0.02em;
+		}
+		#controls select, #controls button {
+			font-family: inherit;
+			font-size: 14px;
+			padding: 6px 10px;
+		}
+		.preset-row { display: flex; gap: 6px; }
+		.preset-row button, #chartModeRow button {
+			border: 1px solid #c3c2b7;
+			background: #fcfcfb;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.preset-row button.active, #chartModeRow button.active {
+			background: #2a78d6;
+			color: #fff;
+			border-color: #2a78d6;
+		}
+		#resultSummary {
+			font-size: 13px;
+			color: #52514e;
+			margin-top: 8px;
+		}
+		th.sortable { cursor: pointer; user-select: none; }
+		th.sortable:hover { background: #e1e0d9; }
+		th.sortable .arrow { font-size: 11px; opacity: 0.6; margin-left: 4px; }
+		#chartCard {
+			background: #fcfcfb;
+			border: 0.5px solid #c3c2b7;
+			border-radius: 4px;
+			padding: 16px;
+			margin-bottom: 16px;
+		}
+		#chartCanvasWrap { position: relative; height: 340px; }
+
+		.author-link {
+			background: none;
+			border: none;
+			padding: 0;
+			font: inherit;
+			color: #2a78d6;
+			cursor: pointer;
+			text-align: left;
+		}
+		.author-link:hover, .author-link:focus-visible { text-decoration: underline; }
+
+		#authorModal {
+			border: none;
+			border-radius: 8px;
+			padding: 24px;
+			width: 90%;
+			max-width: 640px;
+			box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+		}
+		#authorModal::backdrop { background: rgba(11,11,11,0.5); }
+		#authorModal h2 { margin: 0 24px 4px 0; }
+		.modal-close {
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			background: none;
+			border: none;
+			font-size: 22px;
+			line-height: 1;
+			color: #898781;
+			cursor: pointer;
+			padding: 4px;
+		}
+		.modal-close:hover { color: #0b0b0b; }
+		.modal-affiliation { color: #52514e; margin: 0 0 16px; }
+		.modal-stats {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			font-size: 13px;
+			color: #52514e;
+			margin-bottom: 20px;
+		}
+		.modal-stats strong { color: #0b0b0b; font-size: 15px; display: block; }
+		.modal-chart-wrap { position: relative; height: 220px; }
 	</style>
 	</head>
 
@@ -35,7 +138,7 @@
 		<header>
 			<div class="w3-container w3-padding-large">
 				<h1 class=w3-text-indigo><b>DSN Hall of Fame</b></h1>
-				<h3><b>This is a ranking by the number of papers published by authors in DSN and its predecessor conference FTCS. The data is obtained from DBLP. The records go only as far back as 1988, though the conference started in 1971. The recency count is for papers published in the last five years.</b></h3>
+				<h3><b>This is a ranking by the number of papers published by authors in DSN and its predecessor conference FTCS. The data is obtained from DBLP. The records go only as far back as 1988, though the conference started in 1971. Use the year range below to scope the ranking to any span of years.</b></h3>
 				<h3 class=w3-text-indigo><span id="LastModified"></h3>
 			</div>
 		</header>
@@ -44,38 +147,85 @@
 		<div class="w3-container w3-padding-large">
 			<p>
 			Source code, written by Edgardo Barsallo and Saurabh Bagchi, available at: <a href=https://github.com/bagchi/dsn-hall-of-fame>https://github.com/bagchi/dsn-hall-of-fame</a>, derived from the <a href="https://github.com/scholrly/dblp-python">scholrly's dblp-python code</a>.
-			</p> 
-			  
-			<p> 
+			</p>
+
+			<p>
 			Fine-print: (1) Count does not equal impact. (2) Only regular papers are counted, not workshop, industry track, short papers, etc. (3) Affiliation information comes from DBLP.
 			</p>
+		</div>
+
+		<!-- Controls -->
+		<div class="w3-container w3-padding-large">
+			<div id="controls">
+				<div class="control-group">
+					<label for="fromYear">From year</label>
+					<select id="fromYear"></select>
+				</div>
+				<div class="control-group">
+					<label for="toYear">To year</label>
+					<select id="toYear"></select>
+				</div>
+				<div class="control-group">
+					<label>Presets</label>
+					<div class="preset-row" id="presetRow">
+						<button type="button" data-preset="all">All time</button>
+						<button type="button" data-preset="5">Last 5 years</button>
+						<button type="button" data-preset="10">Last 10 years</button>
+					</div>
+				</div>
+				<div class="control-group">
+					<label>Graph</label>
+					<div class="preset-row" id="chartModeRow">
+						<button type="button" data-mode="trend">Trend</button>
+						<button type="button" data-mode="compare">Compare top 6</button>
+					</div>
+				</div>
+			</div>
+			<div id="resultSummary"></div>
+		</div>
+
+		<!-- Graph -->
+		<div class="w3-container w3-padding-large" style="margin-bottom:0">
+			<div id="chartCard">
+				<div id="chartCanvasWrap">
+					<canvas id="rankingChart"></canvas>
+				</div>
+			</div>
 		</div>
 
 		<!-- Ranking Table -->
 		<div class="w3-container w3-padding-large" style="margin-bottom:32px">
 			<table class="w3-table-all" id="rank">
+				<thead>
 				<tr>
-					<th><b>Author</b></th>
-					<th><b># Rank</b></th>
-					<th><b>Name</b></th>
-					<th><b>Num. of Papers</b></th>
-					<th><b>Num. of Recent Papers</b></th>
-					<th><b>Last-Known Affiliation</b></th>
+					<th class="sortable" data-sort="rank"><b>Rank</b><span class="arrow"></span></th>
+					<th class="sortable" data-sort="author"><b>Name</b><span class="arrow"></span></th>
+					<th class="sortable" data-sort="papers"><b>Papers</b><span class="arrow"></span></th>
+					<th class="sortable" data-sort="affiliation"><b>Last-Known Affiliation</b><span class="arrow"></span></th>
 				</tr>
+				</thead>
+				<tbody id="rankingBody"></tbody>
 			</table>
-	
-				<ul id="ranking"></ul>
 		</div>
 
 		<!-- Footer -->
 		<footer class="w3-container w3-padding-32 w3-grey">
 		</footer>
-			
+
 		<div class="w3-black w3-center w3-padding-24" id="acknowledgments">
-			Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+			Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> and <a href="https://www.chartjs.org/" title="Chart.js" target="_blank" class="w3-hover-opacity">Chart.js</a>
 		</div>
 
+		<!-- Author profile -->
+		<dialog id="authorModal">
+			<button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+			<h2 id="modalName"></h2>
+			<p class="modal-affiliation" id="modalAffiliation"></p>
+			<div class="modal-stats" id="modalStats"></div>
+			<div class="modal-chart-wrap"><canvas id="authorChart"></canvas></div>
+		</dialog>
+
 		<iframe id="myIframe" onload="getLastMod()" src="ranking.json" style="display:none;"> </iframe>
-		<script type="text/javascript" src=load.js></script>
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
