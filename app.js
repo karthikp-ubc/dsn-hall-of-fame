@@ -34,6 +34,7 @@
 		filterBySearch,
 		yearRangeArray: rangeArray,
 		topNByPapers,
+		buildCSV,
 		createColorAssigner,
 	} = DSNLogic;
 	const colorFor = createColorAssigner(CATEGORICAL);
@@ -346,6 +347,22 @@
 		render();
 	}
 
+	// Exports exactly what's currently on screen: the visible (range + search filtered) rows,
+	// in the current sort order.
+	function exportCSV() {
+		const rows = sortRowsBy(getVisibleRows(), sortKey, sortDir);
+		const csv = buildCSV(rows);
+		const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+		const url = URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = `dsn-hall-of-fame_${fromYear}-${toYear}.csv`;
+		document.body.appendChild(a);
+		a.click();
+		a.remove();
+		URL.revokeObjectURL(url);
+	}
+
 	function updateCompareUI() {
 		const isCompare = chartMode === 'compare';
 		document.getElementById('compareControls').style.display = isCompare ? '' : 'none';
@@ -395,6 +412,8 @@
 			searchInput.focus();
 			render();
 		});
+
+		document.getElementById('exportCsvBtn').addEventListener('click', exportCSV);
 
 		document.getElementById('fromYear').addEventListener('change', (e) => {
 			fromYear = parseInt(e.target.value, 10);

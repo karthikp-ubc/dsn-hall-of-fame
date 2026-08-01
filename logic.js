@@ -122,6 +122,30 @@
 			.map((r) => r.author);
 	}
 
+	// Quotes a CSV field per RFC 4180 when it contains a comma, quote, or newline
+	// (internal quotes doubled); otherwise returns it unquoted.
+	function csvEscape(value) {
+		const str = String(value);
+		if (/[",\r\n]/.test(str)) {
+			return '"' + str.replace(/"/g, '""') + '"';
+		}
+		return str;
+	}
+
+	// Renders `rows` (as produced by getFilteredRows, optionally filtered/sorted further) as a
+	// CSV string: Rank, Author, Papers, Affiliation, entity-decoded, CRLF line endings (RFC 4180).
+	function buildCSV(rows) {
+		const lines = [['Rank', 'Author', 'Papers', 'Affiliation'].map(csvEscape).join(',')];
+		for (const r of rows) {
+			lines.push(
+				[r.rank, decodeEntities(r.author || ''), r.papers, decodeEntities(r.affiliation || '')]
+					.map(csvEscape)
+					.join(',')
+			);
+		}
+		return lines.join('\r\n');
+	}
+
 	// Stateful color assignment: the first-seen order for each distinct name determines its
 	// palette slot, and that assignment is stable for the assigner's lifetime — so a name's
 	// color never changes when the surrounding selection changes (see dataviz skill: "color
@@ -146,6 +170,7 @@
 		filterBySearch,
 		yearRangeArray,
 		topNByPapers,
+		buildCSV,
 		createColorAssigner,
 	};
 

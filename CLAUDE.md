@@ -108,6 +108,13 @@ the same `get_pub_year` / `get_year_breakdown` functions (defined once in
   HTTP servers that don't send a charset header (e.g. Python's `http.server`)
   leave the browser guessing, and non-ASCII characters (en dashes, names with
   diacritics) render as mojibake. Don't remove this tag.
+- **CSV export downloads exactly what's on screen.** `app.js`'s `exportCSV()`
+  runs the same `getVisibleRows()` + `sortRowsBy()` pipeline `render()` uses, so
+  the export always matches the current search/year-range/sort state — there's
+  no separate "export everything" path to keep in sync. The CSV formatting
+  itself (`logic.js`'s `buildCSV`/`csvEscape`) is RFC 4180 (CRLF line endings,
+  quote-and-double fields containing a comma/quote/newline) and decodes HTML
+  entities before writing, same as the table does.
 
 ## Coding style
 

@@ -44,6 +44,9 @@ browsers restrict `fetch()` for local files — a local server is more reliable.
 - **Author profile** — click any author's name to open their full publication
   history (all-time, independent of the current year-range filter) as a bar
   chart, alongside their all-time and in-range rank/paper count.
+- **Export CSV** — downloads exactly what's currently on screen: the visible
+  rows (respecting search and the year range), in the current sort order, as
+  `dsn-hall-of-fame_<fromYear>-<toYear>.csv`.
 
 ## Data
 
@@ -77,7 +80,7 @@ per-year publication count used for everything range-dependent.
 
 ```bash
 pytest -q                          # crawler / data pipeline (Python)
-node --test tests/js/logic.test.js # front-end filtering/ranking/sorting logic (JS)
+node --test tests/js/logic.test.js # front-end filtering/ranking/sorting/CSV logic (JS)
 ```
 
 Both should pass before shipping a change to either the data pipeline or the
