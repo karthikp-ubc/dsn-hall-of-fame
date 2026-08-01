@@ -35,15 +35,39 @@ def get_recent_pubs(pubs):
     """
     cc = 0
     for key in pubs:
-        # in case the year has a suffix (e.g., LeeL17a)
-        try:
-            yyy = int(key[len(key) - 2:])
-        except:
-            yyy = int(key[len(key) - 3:len(key) - 1])
-        yyy = yyy + 1900 if yyy > 50 else yyy + 2000
-        if yyy >= RECENT:
+        if get_pub_year(key) >= RECENT:
             cc += 1
     return cc
+
+def get_pub_year(key):
+    """Extract the publication year from a dblp key (e.g. `conf/dsn/ArlatKL88` -> 1988).
+    Args:
+        key: dblp publication key.
+
+    Returns:
+        The 4-digit publication year as an int.
+    """
+    try:
+        yyy = int(key[len(key) - 2:])
+    except ValueError:
+        yyy = int(key[len(key) - 3:len(key) - 1])
+    return yyy + 1900 if yyy > 50 else yyy + 2000
+
+
+def get_year_breakdown(pubs):
+    """Compute the number of publications per year for an author.
+    Args:
+        pubs: List of publications for the author.
+
+    Returns:
+        A dict mapping year (as string) to publication count, omitting years with 0 publications.
+    """
+    counts = {}
+    for key in pubs:
+        year = str(get_pub_year(key))
+        counts[year] = counts.get(year, 0) + 1
+    return counts
+
 
 def update_authors(pid, name, key):
     """Update the author list (`authorList`)
@@ -268,7 +292,8 @@ def main():
             "author": value['name'],
             'total': value['total'],
             'recent': value['recent'],
-            'affiliation': affiliation
+            'affiliation': affiliation,
+            'years': get_year_breakdown(value['pubs'])
         })
 
         i+=1
