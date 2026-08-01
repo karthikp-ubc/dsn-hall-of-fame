@@ -6,7 +6,39 @@
         "author": "Ravishankar K. Iyer",
         "total": 54,
         "recent": 4,
-        "affiliation": "University of Illinois at Urbana-Champaign, Center for Reliable &amp; High Performance Computing (CRHC), IL, USA"
+        "affiliation": "University of Illinois at Urbana-Champaign, Center for Reliable &amp; High Performance Computing (CRHC), IL, USA",
+        "years": {
+            "1993": 4,
+            "2024": 2,
+            "2009": 2,
+            "2010": 1,
+            "2007": 2,
+            "2015": 1,
+            "2003": 3,
+            "2002": 3,
+            "2026": 1,
+            "2001": 2,
+            "1997": 2,
+            "2011": 4,
+            "2004": 3,
+            "2008": 1,
+            "1991": 1,
+            "2018": 1,
+            "2014": 2,
+            "2016": 2,
+            "2012": 1,
+            "2019": 1,
+            "1998": 1,
+            "1996": 2,
+            "2006": 1,
+            "2020": 1,
+            "1994": 2,
+            "2005": 4,
+            "1990": 1,
+            "2022": 1,
+            "1988": 1,
+            "1995": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -15,7 +47,31 @@
         "author": "Zbigniew Kalbarczyk",
         "total": 35,
         "recent": 2,
-        "affiliation": "University of Illinois at Urbana-Champaign, Coordinated Science Laboratory"
+        "affiliation": "University of Illinois at Urbana-Champaign, Coordinated Science Laboratory",
+        "years": {
+            "2009": 2,
+            "2010": 1,
+            "2007": 1,
+            "2015": 1,
+            "2003": 3,
+            "2002": 1,
+            "2001": 2,
+            "2011": 4,
+            "2004": 3,
+            "2024": 1,
+            "2008": 1,
+            "2018": 1,
+            "2014": 2,
+            "2016": 1,
+            "2012": 1,
+            "2019": 1,
+            "1998": 1,
+            "2006": 1,
+            "2020": 1,
+            "2005": 4,
+            "2017": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -24,7 +80,29 @@
         "author": "William H. Sanders",
         "total": 34,
         "recent": 0,
-        "affiliation": "University of Illinois, Urbana-Champain, IL, USA"
+        "affiliation": "University of Illinois, Urbana-Champain, IL, USA",
+        "years": {
+            "2002": 3,
+            "2017": 2,
+            "2006": 4,
+            "2010": 2,
+            "2003": 2,
+            "2007": 1,
+            "2008": 2,
+            "1996": 1,
+            "2009": 2,
+            "2016": 2,
+            "2001": 2,
+            "2013": 1,
+            "1989": 1,
+            "2012": 2,
+            "2018": 1,
+            "2004": 1,
+            "2005": 2,
+            "2019": 1,
+            "1993": 1,
+            "2000": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -33,7 +111,26 @@
         "author": "Karthik Pattabiraman",
         "total": 24,
         "recent": 7,
-        "affiliation": "University of British Columbia, Vancouver, Canada"
+        "affiliation": "University of British Columbia, Vancouver, Canada",
+        "years": {
+            "2015": 1,
+            "2018": 2,
+            "2023": 1,
+            "2009": 1,
+            "2025": 3,
+            "2020": 1,
+            "2008": 1,
+            "2007": 1,
+            "2014": 3,
+            "2021": 2,
+            "2022": 1,
+            "2016": 1,
+            "2026": 2,
+            "2013": 1,
+            "2012": 1,
+            "2005": 1,
+            "2017": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -42,7 +139,27 @@
         "author": "Kishor S. Trivedi",
         "total": 23,
         "recent": 0,
-        "affiliation": "Duke University, Department of Electrical and Computer Engineering, Durham, NC, USA"
+        "affiliation": "Duke University, Department of Electrical and Computer Engineering, Durham, NC, USA",
+        "years": {
+            "2006": 1,
+            "1988": 1,
+            "1999": 2,
+            "2003": 2,
+            "2013": 2,
+            "2014": 1,
+            "2011": 1,
+            "1993": 1,
+            "2005": 1,
+            "2002": 3,
+            "2012": 1,
+            "1995": 1,
+            "1997": 1,
+            "2007": 1,
+            "2008": 1,
+            "2010": 1,
+            "2004": 1,
+            "1994": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -51,7 +168,23 @@
         "author": "Henrique Madeira",
         "total": 22,
         "recent": 2,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1998": 1,
+            "2000": 2,
+            "2009": 2,
+            "2007": 2,
+            "2002": 3,
+            "2005": 1,
+            "2019": 1,
+            "2024": 1,
+            "2003": 3,
+            "1996": 2,
+            "2004": 1,
+            "1994": 1,
+            "2010": 1,
+            "2026": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -60,7 +193,24 @@
         "author": "Saurabh Bagchi",
         "total": 22,
         "recent": 3,
-        "affiliation": "Purdue University, West Lafayette, USA"
+        "affiliation": "Purdue University, West Lafayette, USA",
+        "years": {
+            "2007": 1,
+            "2005": 4,
+            "2004": 2,
+            "2018": 1,
+            "2012": 3,
+            "2009": 1,
+            "2010": 1,
+            "2017": 1,
+            "2026": 2,
+            "2013": 1,
+            "2024": 1,
+            "2019": 1,
+            "2014": 1,
+            "2002": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -69,7 +219,25 @@
         "author": "Christof Fetzer",
         "total": 20,
         "recent": 0,
-        "affiliation": "Dresden University of Technology, Germany"
+        "affiliation": "Dresden University of Technology, Germany",
+        "years": {
+            "2003": 3,
+            "2017": 1,
+            "2016": 1,
+            "2007": 1,
+            "2002": 1,
+            "2018": 1,
+            "2000": 1,
+            "2020": 1,
+            "2015": 2,
+            "1998": 1,
+            "2021": 1,
+            "2011": 2,
+            "2019": 1,
+            "1997": 1,
+            "2005": 1,
+            "2008": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -78,7 +246,22 @@
         "author": "Haining Wang 0001",
         "total": 19,
         "recent": 7,
-        "affiliation": "Virginia Tech, Department of Electrical and Computer Engineering, Arlington, VA, USA"
+        "affiliation": "Virginia Tech, Department of Electrical and Computer Engineering, Arlington, VA, USA",
+        "years": {
+            "2022": 2,
+            "2025": 2,
+            "2017": 2,
+            "2021": 2,
+            "2013": 2,
+            "2007": 1,
+            "2026": 2,
+            "2009": 1,
+            "2006": 1,
+            "2015": 1,
+            "2024": 1,
+            "2018": 1,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -87,7 +270,20 @@
         "author": "Sudhakar M. Reddy",
         "total": 17,
         "recent": 0,
-        "affiliation": "University of Iowa, Iowa City, IA, USA"
+        "affiliation": "University of Iowa, Iowa City, IA, USA",
+        "years": {
+            "1993": 3,
+            "1996": 1,
+            "1988": 1,
+            "1994": 3,
+            "1995": 1,
+            "1997": 1,
+            "1998": 1,
+            "1990": 2,
+            "2000": 1,
+            "1991": 1,
+            "1992": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -96,7 +292,23 @@
         "author": "Neeraj Suri",
         "total": 17,
         "recent": 0,
-        "affiliation": "Lancaster University, Bailrigg, UK"
+        "affiliation": "Lancaster University, Bailrigg, UK",
+        "years": {
+            "2006": 1,
+            "2007": 2,
+            "2000": 2,
+            "2020": 1,
+            "1999": 1,
+            "1992": 1,
+            "2011": 1,
+            "2005": 1,
+            "2012": 1,
+            "2001": 1,
+            "1998": 1,
+            "2013": 2,
+            "2002": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -105,7 +317,23 @@
         "author": "Rachid Guerraoui",
         "total": 17,
         "recent": 0,
-        "affiliation": "Swiss Federal Institute of Technology in Lausanne, Switzerland"
+        "affiliation": "Swiss Federal Institute of Technology in Lausanne, Switzerland",
+        "years": {
+            "2002": 2,
+            "2000": 2,
+            "2005": 1,
+            "2009": 1,
+            "2018": 1,
+            "2001": 1,
+            "2003": 1,
+            "2004": 1,
+            "2021": 1,
+            "2020": 1,
+            "2006": 2,
+            "2017": 1,
+            "2015": 1,
+            "1996": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -114,7 +342,19 @@
         "author": "Philip J. Koopman Jr.",
         "total": 17,
         "recent": 0,
-        "affiliation": "Carnegie Mellon University, Pittsburgh, USA"
+        "affiliation": "Carnegie Mellon University, Pittsburgh, USA",
+        "years": {
+            "2004": 4,
+            "2009": 3,
+            "2005": 2,
+            "1999": 1,
+            "2014": 1,
+            "1998": 1,
+            "2002": 2,
+            "2001": 1,
+            "2006": 1,
+            "2000": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -123,7 +363,21 @@
         "author": "Johan Karlsson",
         "total": 16,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1994": 2,
+            "2005": 2,
+            "2001": 2,
+            "2011": 2,
+            "2017": 1,
+            "1998": 1,
+            "1989": 1,
+            "2002": 1,
+            "2010": 1,
+            "2003": 1,
+            "1992": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -132,7 +386,23 @@
         "author": "Kang G. Shin",
         "total": 16,
         "recent": 2,
-        "affiliation": "University of Michigan, Ann Arbor, USA"
+        "affiliation": "University of Michigan, Ann Arbor, USA",
+        "years": {
+            "1992": 1,
+            "2010": 1,
+            "2025": 1,
+            "1989": 1,
+            "1995": 1,
+            "2026": 1,
+            "2001": 2,
+            "2005": 1,
+            "1991": 2,
+            "1997": 1,
+            "1994": 1,
+            "1990": 1,
+            "1998": 1,
+            "1993": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -141,7 +411,24 @@
         "author": "Roy A. Maxion",
         "total": 16,
         "recent": 0,
-        "affiliation": "Carnegie Mellon University, Pittsburgh, USA"
+        "affiliation": "Carnegie Mellon University, Pittsburgh, USA",
+        "years": {
+            "2009": 1,
+            "1995": 1,
+            "1997": 1,
+            "2006": 1,
+            "1998": 1,
+            "2004": 1,
+            "1993": 1,
+            "2002": 1,
+            "2005": 2,
+            "2003": 1,
+            "2007": 1,
+            "2010": 1,
+            "1990": 1,
+            "1996": 1,
+            "2000": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -150,7 +437,22 @@
         "author": "Paulo Ver\u00edssimo",
         "total": 15,
         "recent": 2,
-        "affiliation": "University of Lisbon, Faculty of Sciences"
+        "affiliation": "University of Lisbon, Faculty of Sciences",
+        "years": {
+            "1990": 1,
+            "1997": 1,
+            "1992": 1,
+            "1988": 1,
+            "2004": 1,
+            "2024": 2,
+            "2002": 1,
+            "2006": 2,
+            "1998": 1,
+            "2005": 1,
+            "2003": 1,
+            "2000": 1,
+            "1999": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -159,7 +461,19 @@
         "author": "Marco Vieira",
         "total": 15,
         "recent": 1,
-        "affiliation": "University of Coimbra, Portugal"
+        "affiliation": "University of Coimbra, Portugal",
+        "years": {
+            "2015": 3,
+            "2023": 1,
+            "2008": 2,
+            "2009": 2,
+            "2003": 2,
+            "2007": 1,
+            "2005": 1,
+            "2000": 1,
+            "2014": 1,
+            "2002": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -168,7 +482,18 @@
         "author": "Pascal Felber",
         "total": 15,
         "recent": 3,
-        "affiliation": "University of Neuch\u00e2tel, Switzerland"
+        "affiliation": "University of Neuch\u00e2tel, Switzerland",
+        "years": {
+            "2019": 1,
+            "2011": 1,
+            "2020": 1,
+            "2018": 4,
+            "2021": 3,
+            "2003": 1,
+            "2016": 1,
+            "2023": 1,
+            "2025": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -177,7 +502,20 @@
         "author": "Fernando Pedone",
         "total": 15,
         "recent": 1,
-        "affiliation": "University of Lugano, Switzerland"
+        "affiliation": "University of Lugano, Switzerland",
+        "years": {
+            "2004": 1,
+            "2017": 1,
+            "2011": 1,
+            "2023": 1,
+            "2012": 2,
+            "2016": 1,
+            "2014": 3,
+            "2020": 2,
+            "2013": 1,
+            "2018": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -186,7 +524,20 @@
         "author": "Onur Mutlu",
         "total": 15,
         "recent": 7,
-        "affiliation": "ETH Zurich"
+        "affiliation": "ETH Zurich",
+        "years": {
+            "2015": 3,
+            "2026": 1,
+            "2023": 1,
+            "2022": 1,
+            "2025": 2,
+            "2019": 1,
+            "2020": 1,
+            "2016": 1,
+            "2024": 2,
+            "2005": 1,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -195,7 +546,20 @@
         "author": "Jean Arlat",
         "total": 14,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1994": 1,
+            "1989": 1,
+            "2002": 2,
+            "1993": 2,
+            "2003": 1,
+            "1999": 1,
+            "1996": 1,
+            "2004": 2,
+            "1988": 1,
+            "1995": 1,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -204,7 +568,20 @@
         "author": "Daniel P. Siewiorek",
         "total": 14,
         "recent": 0,
-        "affiliation": "Carnegie Mellon University, Pittsburgh, USA"
+        "affiliation": "Carnegie Mellon University, Pittsburgh, USA",
+        "years": {
+            "1988": 1,
+            "2003": 1,
+            "1995": 2,
+            "1991": 1,
+            "1993": 3,
+            "1998": 1,
+            "2001": 1,
+            "1990": 1,
+            "1996": 1,
+            "1997": 1,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -213,7 +590,21 @@
         "author": "Evgenia Smirni",
         "total": 14,
         "recent": 2,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2022": 1,
+            "2016": 1,
+            "2008": 3,
+            "2009": 1,
+            "2025": 1,
+            "2006": 1,
+            "2018": 1,
+            "2021": 1,
+            "2020": 1,
+            "2013": 1,
+            "2011": 1,
+            "2012": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -222,7 +613,18 @@
         "author": "Irith Pomeranz",
         "total": 13,
         "recent": 0,
-        "affiliation": "Purdue University, School of Electrical and Computer Engineering, West Lafayette, IN, USA"
+        "affiliation": "Purdue University, School of Electrical and Computer Engineering, West Lafayette, IN, USA",
+        "years": {
+            "1993": 3,
+            "1996": 1,
+            "1994": 2,
+            "1995": 1,
+            "1997": 1,
+            "1998": 1,
+            "2000": 1,
+            "1991": 1,
+            "1992": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -231,7 +633,17 @@
         "author": "Yennun Huang",
         "total": 13,
         "recent": 2,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1999": 2,
+            "1997": 1,
+            "1995": 3,
+            "2009": 1,
+            "2001": 2,
+            "1993": 2,
+            "2025": 1,
+            "2024": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -240,7 +652,19 @@
         "author": "Nuno Neves 0001",
         "total": 13,
         "recent": 0,
-        "affiliation": "University of Lisbon, Faculty of Sciences, Department of Computer Science, Portugal"
+        "affiliation": "University of Lisbon, Faculty of Sciences, Department of Computer Science, Portugal",
+        "years": {
+            "2009": 1,
+            "2007": 1,
+            "2010": 1,
+            "2017": 2,
+            "1998": 1,
+            "2016": 2,
+            "2006": 2,
+            "2018": 1,
+            "2005": 1,
+            "2011": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -249,7 +673,21 @@
         "author": "Michael R. Lyu",
         "total": 12,
         "recent": 2,
-        "affiliation": "Chinese University of Hong Kong, Department of Computer Science and Engineering, Hong Kong"
+        "affiliation": "Chinese University of Hong Kong, Department of Computer Science and Engineering, Hong Kong",
+        "years": {
+            "1988": 1,
+            "2018": 1,
+            "2019": 1,
+            "1993": 1,
+            "2017": 1,
+            "1997": 1,
+            "2026": 1,
+            "1995": 1,
+            "2008": 1,
+            "2016": 1,
+            "2022": 1,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -258,7 +696,18 @@
         "author": "Arun K. Somani",
         "total": 12,
         "recent": 0,
-        "affiliation": "Iowa State University, Ames, Iowa, USA"
+        "affiliation": "Iowa State University, Ames, Iowa, USA",
+        "years": {
+            "1994": 2,
+            "2005": 1,
+            "1999": 2,
+            "2001": 1,
+            "2009": 1,
+            "1989": 2,
+            "1992": 1,
+            "2002": 1,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -267,7 +716,17 @@
         "author": "W. Kent Fuchs",
         "total": 12,
         "recent": 0,
-        "affiliation": "Purdue University, West Lafayette, USA"
+        "affiliation": "Purdue University, West Lafayette, USA",
+        "years": {
+            "1999": 1,
+            "1992": 3,
+            "1995": 1,
+            "1998": 2,
+            "1993": 2,
+            "1989": 1,
+            "1990": 1,
+            "1996": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -276,7 +735,20 @@
         "author": "Lu\u00eds E. T. Rodrigues",
         "total": 12,
         "recent": 0,
-        "affiliation": "University of Lisbon, Department of Computer Science, Portugal"
+        "affiliation": "University of Lisbon, Department of Computer Science, Portugal",
+        "years": {
+            "1990": 1,
+            "2009": 1,
+            "1992": 1,
+            "2020": 1,
+            "2003": 1,
+            "2002": 1,
+            "1998": 1,
+            "2012": 1,
+            "2007": 2,
+            "2013": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -285,7 +757,19 @@
         "author": "Tzi-cker Chiueh",
         "total": 12,
         "recent": 0,
-        "affiliation": "Industrial Technology Research Institute, Hsinchu, Taiwan"
+        "affiliation": "Industrial Technology Research Institute, Hsinchu, Taiwan",
+        "years": {
+            "2003": 2,
+            "2009": 1,
+            "2002": 1,
+            "2007": 1,
+            "2021": 1,
+            "2005": 2,
+            "2013": 1,
+            "1996": 1,
+            "2006": 1,
+            "2004": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -294,7 +778,19 @@
         "author": "Michel Cukier",
         "total": 12,
         "recent": 1,
-        "affiliation": "University of Maryland, College Park, USA"
+        "affiliation": "University of Maryland, College Park, USA",
+        "years": {
+            "2002": 2,
+            "2009": 1,
+            "2025": 1,
+            "2006": 2,
+            "2007": 1,
+            "2011": 1,
+            "2001": 1,
+            "2003": 1,
+            "2000": 1,
+            "2005": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -303,7 +799,19 @@
         "author": "Kewal K. Saluja",
         "total": 11,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1989": 2,
+            "1991": 1,
+            "1994": 1,
+            "1992": 1,
+            "1995": 1,
+            "1988": 1,
+            "2000": 1,
+            "2008": 1,
+            "1996": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -312,7 +820,18 @@
         "author": "Gilles Muller",
         "total": 11,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2009": 2,
+            "2011": 1,
+            "2017": 2,
+            "2015": 1,
+            "1996": 1,
+            "2000": 1,
+            "2013": 1,
+            "1991": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -321,7 +840,17 @@
         "author": "Lorenzo Alvisi",
         "total": 11,
         "recent": 0,
-        "affiliation": "University of Texas at Austin, USA"
+        "affiliation": "University of Texas at Austin, USA",
+        "years": {
+            "2005": 1,
+            "2008": 1,
+            "2004": 1,
+            "2003": 2,
+            "1999": 2,
+            "2000": 1,
+            "2002": 2,
+            "1993": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -330,7 +859,19 @@
         "author": "James S. Plank",
         "total": 11,
         "recent": 0,
-        "affiliation": "University of Tennessee, Knoxville, USA"
+        "affiliation": "University of Tennessee, Knoxville, USA",
+        "years": {
+            "1999": 1,
+            "2002": 1,
+            "2005": 2,
+            "1994": 1,
+            "2000": 1,
+            "2004": 1,
+            "2009": 1,
+            "1995": 1,
+            "2012": 1,
+            "1998": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -339,7 +880,20 @@
         "author": "Michael K. Reiter",
         "total": 11,
         "recent": 1,
-        "affiliation": "Duke University, Durham, NC, USA"
+        "affiliation": "Duke University, Durham, NC, USA",
+        "years": {
+            "2007": 1,
+            "2006": 1,
+            "2011": 1,
+            "2010": 1,
+            "2000": 1,
+            "2008": 1,
+            "2004": 1,
+            "2019": 1,
+            "2013": 1,
+            "2017": 1,
+            "2024": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -348,7 +902,20 @@
         "author": "Marcello Cinque",
         "total": 11,
         "recent": 3,
-        "affiliation": "University of Naples Federico II, Italy"
+        "affiliation": "University of Naples Federico II, Italy",
+        "years": {
+            "2024": 1,
+            "2015": 1,
+            "2023": 1,
+            "2014": 1,
+            "2007": 1,
+            "2010": 1,
+            "2017": 1,
+            "2026": 1,
+            "2013": 1,
+            "2006": 1,
+            "2012": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -357,7 +924,19 @@
         "author": "Domenico Cotroneo",
         "total": 11,
         "recent": 2,
-        "affiliation": "University of Naples Federico II, Italy"
+        "affiliation": "University of Naples Federico II, Italy",
+        "years": {
+            "2015": 1,
+            "2011": 1,
+            "2023": 1,
+            "2026": 1,
+            "2014": 1,
+            "2020": 1,
+            "2007": 1,
+            "2010": 2,
+            "2006": 1,
+            "2012": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -366,7 +945,17 @@
         "author": "Karama Kanoun",
         "total": 10,
         "recent": 0,
-        "affiliation": "University of Toulouse, France"
+        "affiliation": "University of Toulouse, France",
+        "years": {
+            "2002": 2,
+            "2009": 1,
+            "1996": 1,
+            "1990": 1,
+            "2004": 1,
+            "2003": 1,
+            "1993": 2,
+            "1988": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -375,7 +964,18 @@
         "author": "Prithviraj Banerjee",
         "total": 10,
         "recent": 0,
-        "affiliation": "Northwestern University, Illinois, USA"
+        "affiliation": "Northwestern University, Illinois, USA",
+        "years": {
+            "1988": 1,
+            "1999": 1,
+            "1990": 2,
+            "1996": 1,
+            "1992": 1,
+            "1994": 1,
+            "1993": 1,
+            "1995": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -384,7 +984,19 @@
         "author": "Douglas M. Blough",
         "total": 10,
         "recent": 1,
-        "affiliation": "Georgia Institute of Technology, Atlanta, USA"
+        "affiliation": "Georgia Institute of Technology, Atlanta, USA",
+        "years": {
+            "1989": 1,
+            "1990": 1,
+            "2002": 1,
+            "2018": 1,
+            "1988": 1,
+            "1997": 1,
+            "1991": 1,
+            "1994": 1,
+            "1995": 1,
+            "2026": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -393,7 +1005,18 @@
         "author": "Bella Bose",
         "total": 10,
         "recent": 0,
-        "affiliation": "Oregon State University, Corvallis, OR, USA"
+        "affiliation": "Oregon State University, Corvallis, OR, USA",
+        "years": {
+            "1989": 2,
+            "1996": 1,
+            "1992": 1,
+            "1997": 1,
+            "1991": 1,
+            "1990": 1,
+            "1999": 1,
+            "1994": 1,
+            "1998": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -402,7 +1025,18 @@
         "author": "Yair Amir",
         "total": 10,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2013": 1,
+            "2019": 1,
+            "2000": 1,
+            "2008": 1,
+            "2018": 1,
+            "2006": 1,
+            "1996": 1,
+            "1992": 1,
+            "2003": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -411,7 +1045,18 @@
         "author": "Yi-Min Wang",
         "total": 10,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1997": 1,
+            "2005": 1,
+            "2004": 1,
+            "2003": 1,
+            "1993": 1,
+            "2001": 1,
+            "1995": 2,
+            "2000": 1,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -420,7 +1065,18 @@
         "author": "Andr\u00e9 Schiper",
         "total": 10,
         "recent": 0,
-        "affiliation": "Swiss Federal Institute of Technology in Lausanne, Switzerland"
+        "affiliation": "Swiss Federal Institute of Technology in Lausanne, Switzerland",
+        "years": {
+            "2010": 1,
+            "1993": 1,
+            "2007": 2,
+            "2006": 1,
+            "2001": 1,
+            "2000": 1,
+            "2013": 1,
+            "2003": 1,
+            "1996": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -429,7 +1085,17 @@
         "author": "Michel Raynal",
         "total": 10,
         "recent": 0,
-        "affiliation": "IRISA Rennes"
+        "affiliation": "IRISA Rennes",
+        "years": {
+            "2000": 2,
+            "1997": 1,
+            "2007": 1,
+            "2002": 1,
+            "2003": 2,
+            "2005": 1,
+            "1998": 1,
+            "2006": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -438,7 +1104,18 @@
         "author": "Joost-Pieter Katoen",
         "total": 10,
         "recent": 0,
-        "affiliation": "RWTH Aachen University, Germany"
+        "affiliation": "RWTH Aachen University, Germany",
+        "years": {
+            "2002": 1,
+            "2018": 1,
+            "2003": 1,
+            "2005": 2,
+            "2015": 1,
+            "2004": 1,
+            "2009": 1,
+            "2021": 1,
+            "2016": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -447,7 +1124,18 @@
         "author": "Saman A. Zonouz",
         "total": 10,
         "recent": 1,
-        "affiliation": "Rutgers University, Department of Electrical and Computer Engineering, Piscataway, NJ, USA"
+        "affiliation": "Rutgers University, Department of Electrical and Computer Engineering, Piscataway, NJ, USA",
+        "years": {
+            "2009": 1,
+            "2016": 2,
+            "2021": 1,
+            "2023": 1,
+            "2018": 1,
+            "2019": 1,
+            "2017": 1,
+            "2012": 1,
+            "2020": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -456,7 +1144,17 @@
         "author": "Patrick P. C. Lee",
         "total": 10,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2015": 1,
+            "2019": 1,
+            "2012": 1,
+            "2021": 1,
+            "2017": 1,
+            "2014": 1,
+            "2011": 1,
+            "2016": 3
+        }
     },
     {
         "anchor": "ranking",
@@ -465,7 +1163,17 @@
         "author": "John C. Knight",
         "total": 9,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2001": 1,
+            "2005": 1,
+            "2008": 1,
+            "2009": 1,
+            "2004": 2,
+            "1989": 1,
+            "2007": 1,
+            "1990": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -474,7 +1182,17 @@
         "author": "Mohamed Ka\u00e2niche",
         "total": 9,
         "recent": 0,
-        "affiliation": "LAAS, Toulouse, France"
+        "affiliation": "LAAS, Toulouse, France",
+        "years": {
+            "2021": 2,
+            "2018": 1,
+            "2009": 1,
+            "1990": 1,
+            "2003": 1,
+            "1998": 1,
+            "2015": 1,
+            "1993": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -483,7 +1201,18 @@
         "author": "Ann T. Tai",
         "total": 9,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2008": 1,
+            "1997": 1,
+            "2002": 1,
+            "2001": 1,
+            "2003": 1,
+            "1994": 1,
+            "2004": 1,
+            "2005": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -492,7 +1221,16 @@
         "author": "Jean-Charles Fabre",
         "total": 9,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2004": 2,
+            "2003": 2,
+            "1999": 1,
+            "1995": 1,
+            "2007": 1,
+            "2005": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -501,7 +1239,18 @@
         "author": "Kenneth P. Birman",
         "total": 9,
         "recent": 0,
-        "affiliation": "Cornell University, Ithaca, USA"
+        "affiliation": "Cornell University, Ithaca, USA",
+        "years": {
+            "2020": 1,
+            "2001": 1,
+            "2013": 1,
+            "2008": 1,
+            "1998": 1,
+            "2002": 1,
+            "2018": 1,
+            "2014": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -510,7 +1259,15 @@
         "author": "Robbert van Renesse",
         "total": 9,
         "recent": 0,
-        "affiliation": "Cornell University, Ithaca, USA"
+        "affiliation": "Cornell University, Ithaca, USA",
+        "years": {
+            "1999": 1,
+            "2001": 1,
+            "2013": 1,
+            "2008": 1,
+            "2014": 4,
+            "2002": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -519,7 +1276,16 @@
         "author": "Peng Liu 0005",
         "total": 9,
         "recent": 0,
-        "affiliation": "Pennsylvania State University, College of Information Sciences and Technology, University Park, PA, USA"
+        "affiliation": "Pennsylvania State University, College of Information Sciences and Technology, University Park, PA, USA",
+        "years": {
+            "2017": 2,
+            "2000": 1,
+            "2016": 1,
+            "2018": 1,
+            "2014": 1,
+            "2015": 2,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -528,7 +1294,17 @@
         "author": "Boudewijn R. Haverkort",
         "total": 9,
         "recent": 0,
-        "affiliation": "University of Twente, Enschede, Netherlands"
+        "affiliation": "University of Twente, Enschede, Netherlands",
+        "years": {
+            "2008": 1,
+            "2002": 2,
+            "2013": 1,
+            "2010": 1,
+            "2007": 1,
+            "2015": 1,
+            "2009": 1,
+            "2004": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -537,7 +1313,16 @@
         "author": "Herbert Bos",
         "total": 9,
         "recent": 0,
-        "affiliation": "Vrije Universiteit Amsterdam, The Netherlands"
+        "affiliation": "Vrije Universiteit Amsterdam, The Netherlands",
+        "years": {
+            "2007": 1,
+            "2012": 1,
+            "2009": 1,
+            "2016": 2,
+            "2017": 1,
+            "2015": 2,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -546,7 +1331,17 @@
         "author": "Angelos Stavrou",
         "total": 9,
         "recent": 3,
-        "affiliation": "Virginia Tech, VA, USA"
+        "affiliation": "Virginia Tech, VA, USA",
+        "years": {
+            "2024": 1,
+            "2013": 1,
+            "2017": 1,
+            "2014": 2,
+            "2025": 1,
+            "2026": 1,
+            "2012": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -555,7 +1350,14 @@
         "author": "Valerio Schiavoni",
         "total": 9,
         "recent": 3,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2020": 1,
+            "2018": 2,
+            "2021": 3,
+            "2023": 1,
+            "2025": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -564,7 +1366,14 @@
         "author": "Jean-Claude Laprie",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1989": 1,
+            "1990": 1,
+            "1988": 2,
+            "1993": 3,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -573,7 +1382,15 @@
         "author": "Jacob A. Abraham",
         "total": 8,
         "recent": 0,
-        "affiliation": "University of Texas at Austin, USA"
+        "affiliation": "University of Texas at Austin, USA",
+        "years": {
+            "1992": 2,
+            "1988": 2,
+            "1998": 1,
+            "1993": 1,
+            "1990": 1,
+            "1994": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -582,7 +1399,16 @@
         "author": "John P. Hayes",
         "total": 8,
         "recent": 0,
-        "affiliation": "University of Michigan, Ann Arbor, USA"
+        "affiliation": "University of Michigan, Ann Arbor, USA",
+        "years": {
+            "1988": 1,
+            "1994": 1,
+            "1993": 2,
+            "2004": 1,
+            "1989": 1,
+            "2002": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -591,7 +1417,14 @@
         "author": "David Powell",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1992": 2,
+            "1998": 1,
+            "1988": 2,
+            "1993": 2,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -600,7 +1433,16 @@
         "author": "G. Robert Redinbo",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1988": 1,
+            "1993": 1,
+            "1996": 1,
+            "2001": 1,
+            "1992": 2,
+            "1989": 1,
+            "1999": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -609,7 +1451,15 @@
         "author": "Nirmal R. Saxena",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1995": 2,
+            "1993": 2,
+            "1989": 1,
+            "2018": 1,
+            "1991": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -618,7 +1468,17 @@
         "author": "Richard D. Schlichting",
         "total": 8,
         "recent": 0,
-        "affiliation": "AT&amp;T Inc"
+        "affiliation": "AT&amp;T Inc",
+        "years": {
+            "2002": 1,
+            "2010": 1,
+            "1991": 1,
+            "2005": 1,
+            "2001": 1,
+            "2006": 1,
+            "2004": 1,
+            "1994": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -627,7 +1487,15 @@
         "author": "Jo\u00e3o Gabriel Silva",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1996": 2,
+            "1998": 2,
+            "1994": 1,
+            "1999": 1,
+            "2000": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -636,7 +1504,15 @@
         "author": "Peter Folkesson",
         "total": 8,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2005": 2,
+            "2001": 2,
+            "2002": 1,
+            "1998": 1,
+            "2003": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -645,7 +1521,17 @@
         "author": "Christian Cachin",
         "total": 8,
         "recent": 0,
-        "affiliation": "University of Bern, Switzerland"
+        "affiliation": "University of Bern, Switzerland",
+        "years": {
+            "2004": 1,
+            "2012": 1,
+            "2003": 1,
+            "2017": 1,
+            "2002": 1,
+            "2006": 1,
+            "2009": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -654,7 +1540,17 @@
         "author": "Matti A. Hiltunen",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2010": 1,
+            "2005": 1,
+            "2012": 1,
+            "2001": 1,
+            "2006": 1,
+            "2007": 1,
+            "2013": 1,
+            "2004": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -663,7 +1559,16 @@
         "author": "Jos\u00e9 Pereira 0001",
         "total": 8,
         "recent": 0,
-        "affiliation": "University of Minho, INESC TEC, Braga, Portugal"
+        "affiliation": "University of Minho, INESC TEC, Braga, Portugal",
+        "years": {
+            "2021": 1,
+            "2003": 1,
+            "2002": 1,
+            "2005": 1,
+            "2007": 2,
+            "2013": 1,
+            "2018": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -672,7 +1577,16 @@
         "author": "Sarita V. Adve",
         "total": 8,
         "recent": 0,
-        "affiliation": "University of Illinois at Urbana-Champaign, IL, USA"
+        "affiliation": "University of Illinois at Urbana-Champaign, IL, USA",
+        "years": {
+            "2005": 1,
+            "2004": 1,
+            "2008": 2,
+            "2018": 1,
+            "2007": 1,
+            "2019": 1,
+            "2012": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -681,7 +1595,16 @@
         "author": "Xiapu Luo",
         "total": 8,
         "recent": 0,
-        "affiliation": "Hong Kong Polytechnic University, Hong Kong"
+        "affiliation": "Hong Kong Polytechnic University, Hong Kong",
+        "years": {
+            "2016": 1,
+            "2018": 1,
+            "2005": 1,
+            "2011": 2,
+            "2009": 1,
+            "2014": 1,
+            "2008": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -690,7 +1613,17 @@
         "author": "Dongyan Xu",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2009": 1,
+            "2008": 1,
+            "2010": 1,
+            "2016": 1,
+            "2015": 1,
+            "2014": 1,
+            "2007": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -699,7 +1632,14 @@
         "author": "Alysson Neves Bessani",
         "total": 8,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2011": 1,
+            "2014": 1,
+            "2018": 3,
+            "2020": 2,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -708,7 +1648,17 @@
         "author": "Lydia Y. Chen",
         "total": 8,
         "recent": 2,
-        "affiliation": "IBM Research, Zurich, Switzerland"
+        "affiliation": "IBM Research, Zurich, Switzerland",
+        "years": {
+            "2019": 1,
+            "2025": 1,
+            "2015": 1,
+            "2014": 1,
+            "2012": 1,
+            "2023": 1,
+            "2013": 1,
+            "2016": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -717,7 +1667,14 @@
         "author": "Qiang Zeng 0001",
         "total": 8,
         "recent": 3,
-        "affiliation": "George Mason University, Fairfax, VA, USA"
+        "affiliation": "George Mason University, Fairfax, VA, USA",
+        "years": {
+            "2022": 1,
+            "2019": 2,
+            "2026": 2,
+            "2015": 2,
+            "2020": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -726,7 +1683,15 @@
         "author": "Gregory F. Sullivan",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1995": 2,
+            "1989": 1,
+            "1990": 1,
+            "1994": 1,
+            "1991": 1,
+            "1988": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -735,7 +1700,16 @@
         "author": "Shantanu Dutt",
         "total": 7,
         "recent": 0,
-        "affiliation": "University of Illinois at Chicago, Department of Electrical and Computer Engineering, IL, USA"
+        "affiliation": "University of Illinois at Chicago, Department of Electrical and Computer Engineering, IL, USA",
+        "years": {
+            "1988": 1,
+            "1996": 1,
+            "1995": 1,
+            "1989": 1,
+            "1999": 1,
+            "1992": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -744,7 +1718,16 @@
         "author": "Yves Crouzet",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1989": 1,
+            "2002": 1,
+            "1993": 1,
+            "1998": 1,
+            "2004": 1,
+            "1991": 1,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -753,7 +1736,15 @@
         "author": "Ram Chillarege",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1995": 1,
+            "1992": 2,
+            "1996": 1,
+            "1991": 1,
+            "2002": 1,
+            "1989": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -762,7 +1753,16 @@
         "author": "Rami G. Melhem",
         "total": 7,
         "recent": 0,
-        "affiliation": "University of Pittsburgh, Pennsylvania, USA"
+        "affiliation": "University of Pittsburgh, Pennsylvania, USA",
+        "years": {
+            "2020": 1,
+            "2012": 1,
+            "2016": 1,
+            "1994": 1,
+            "1992": 1,
+            "1989": 1,
+            "2019": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -771,7 +1771,16 @@
         "author": "Farnam Jahanian",
         "total": 7,
         "recent": 0,
-        "affiliation": "National Science Foundation, Arlington, VA, USA"
+        "affiliation": "National Science Foundation, Arlington, VA, USA",
+        "years": {
+            "1996": 1,
+            "2006": 1,
+            "1990": 1,
+            "1999": 1,
+            "2012": 1,
+            "2004": 1,
+            "2000": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -780,7 +1789,15 @@
         "author": "Dong Tang",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1995": 1,
+            "2004": 2,
+            "2006": 1,
+            "2002": 1,
+            "1990": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -789,7 +1806,15 @@
         "author": "E. N. Elnozahy",
         "total": 7,
         "recent": 0,
-        "affiliation": "Carnegie Mellon University, Pittsburgh, USA"
+        "affiliation": "Carnegie Mellon University, Pittsburgh, USA",
+        "years": {
+            "1992": 1,
+            "1997": 1,
+            "1996": 2,
+            "1994": 1,
+            "1999": 1,
+            "1998": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -798,7 +1823,15 @@
         "author": "Pradip Bose",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1994": 1,
+            "2004": 1,
+            "2005": 1,
+            "2018": 1,
+            "2007": 2,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -807,7 +1840,16 @@
         "author": "Anne-Marie Kermarrec",
         "total": 7,
         "recent": 0,
-        "affiliation": "EPFL, Switzerland"
+        "affiliation": "EPFL, Switzerland",
+        "years": {
+            "2018": 1,
+            "2009": 1,
+            "1995": 1,
+            "2003": 1,
+            "2017": 1,
+            "2015": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -816,7 +1858,15 @@
         "author": "Louise E. Moser",
         "total": 7,
         "recent": 0,
-        "affiliation": "University of California, Santa Barbara, USA"
+        "affiliation": "University of California, Santa Barbara, USA",
+        "years": {
+            "2001": 1,
+            "2000": 1,
+            "2002": 1,
+            "2003": 2,
+            "1995": 1,
+            "1999": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -825,7 +1875,15 @@
         "author": "P. M. Melliar-Smith",
         "total": 7,
         "recent": 0,
-        "affiliation": "University of California Santa Barbara"
+        "affiliation": "University of California Santa Barbara",
+        "years": {
+            "2001": 1,
+            "2000": 1,
+            "2002": 1,
+            "2003": 2,
+            "1995": 1,
+            "1999": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -834,7 +1892,15 @@
         "author": "Andrea Bondavalli",
         "total": 7,
         "recent": 0,
-        "affiliation": "University of Florence, Italy"
+        "affiliation": "University of Florence, Italy",
+        "years": {
+            "2005": 1,
+            "2002": 1,
+            "2000": 2,
+            "2016": 1,
+            "2007": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -843,7 +1909,15 @@
         "author": "Shivakant Mishra",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2004": 2,
+            "2005": 1,
+            "2003": 1,
+            "2013": 1,
+            "1999": 1,
+            "2008": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -852,7 +1926,15 @@
         "author": "Julia L. Lawall",
         "total": 7,
         "recent": 0,
-        "affiliation": "Sorbonne University, LIP6, Paris"
+        "affiliation": "Sorbonne University, LIP6, Paris",
+        "years": {
+            "2009": 1,
+            "2017": 2,
+            "2015": 1,
+            "2000": 1,
+            "2013": 1,
+            "2011": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -861,7 +1943,16 @@
         "author": "Kam S. Tso",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2008": 1,
+            "2002": 1,
+            "2001": 1,
+            "2003": 1,
+            "2004": 1,
+            "2005": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -870,7 +1961,16 @@
         "author": "Peter Buchholz 0001",
         "total": 7,
         "recent": 0,
-        "affiliation": "Technical University of Dortmund, Germany"
+        "affiliation": "Technical University of Dortmund, Germany",
+        "years": {
+            "2006": 1,
+            "2019": 1,
+            "2014": 1,
+            "2012": 1,
+            "2002": 1,
+            "2018": 1,
+            "2005": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -879,7 +1979,14 @@
         "author": "George Candea",
         "total": 7,
         "recent": 0,
-        "affiliation": "Swiss Federal Institute of Technology in Lausanne, Switzerland"
+        "affiliation": "Swiss Federal Institute of Technology in Lausanne, Switzerland",
+        "years": {
+            "2011": 2,
+            "2008": 1,
+            "2002": 1,
+            "2010": 2,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -888,7 +1995,16 @@
         "author": "Daniel J. Sorin",
         "total": 7,
         "recent": 0,
-        "affiliation": "Duke University, Durham, USA"
+        "affiliation": "Duke University, Durham, USA",
+        "years": {
+            "2016": 1,
+            "2020": 1,
+            "2008": 1,
+            "2004": 1,
+            "2019": 1,
+            "2003": 1,
+            "2006": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -897,7 +2013,14 @@
         "author": "Moinuddin K. Qureshi",
         "total": 7,
         "recent": 2,
-        "affiliation": "Georgia Institute of Technology, Atlanta GA, USA"
+        "affiliation": "Georgia Institute of Technology, Atlanta GA, USA",
+        "years": {
+            "2015": 2,
+            "2019": 1,
+            "2023": 2,
+            "2005": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -906,7 +2029,15 @@
         "author": "Miguel Correia 0001",
         "total": 7,
         "recent": 0,
-        "affiliation": "University of Lisbon, Instituto Superior T\u00e9cnico, Portugal"
+        "affiliation": "University of Lisbon, Instituto Superior T\u00e9cnico, Portugal",
+        "years": {
+            "2010": 1,
+            "2020": 1,
+            "2016": 1,
+            "2017": 1,
+            "2006": 2,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -915,7 +2046,15 @@
         "author": "Mari\u00eblle Stoelinga",
         "total": 7,
         "recent": 2,
-        "affiliation": "University of Twente, Department of Computer Science"
+        "affiliation": "University of Twente, Department of Computer Science",
+        "years": {
+            "2008": 1,
+            "2007": 1,
+            "2016": 2,
+            "2022": 1,
+            "2023": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -924,7 +2063,15 @@
         "author": "Andrew S. Tanenbaum",
         "total": 7,
         "recent": 0,
-        "affiliation": "VU University Amsterdam, Netherlands"
+        "affiliation": "VU University Amsterdam, Netherlands",
+        "years": {
+            "2013": 1,
+            "2007": 1,
+            "2012": 1,
+            "2009": 1,
+            "2016": 2,
+            "2015": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -933,7 +2080,15 @@
         "author": "Kun Sun 0001",
         "total": 7,
         "recent": 0,
-        "affiliation": "George Mason University, Department of Information Sciences and Technology, Fairfax, VA, USA"
+        "affiliation": "George Mason University, Department of Information Sciences and Technology, Fairfax, VA, USA",
+        "years": {
+            "2013": 1,
+            "2019": 2,
+            "2015": 1,
+            "2012": 1,
+            "2017": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -942,7 +2097,16 @@
         "author": "Zhongshu Gu",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2019": 1,
+            "2020": 1,
+            "2015": 1,
+            "2017": 1,
+            "2014": 1,
+            "2021": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -951,7 +2115,15 @@
         "author": "Paolo Rech",
         "total": 7,
         "recent": 2,
-        "affiliation": "University of Trento, Italy"
+        "affiliation": "University of Trento, Italy",
+        "years": {
+            "2022": 1,
+            "2014": 2,
+            "2018": 1,
+            "2021": 1,
+            "2019": 1,
+            "2026": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -960,7 +2132,14 @@
         "author": "Devesh Tiwari",
         "total": 7,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2016": 1,
+            "2015": 1,
+            "2018": 3,
+            "2014": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -969,7 +2148,14 @@
         "author": "Guanpeng Li",
         "total": 7,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2015": 1,
+            "2021": 2,
+            "2018": 2,
+            "2024": 1,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -978,7 +2164,15 @@
         "author": "Stefan Schmid 0001",
         "total": 7,
         "recent": 3,
-        "affiliation": "Technical University of Berlin, Department of Internet Architecture and Management, Berlin, Germany"
+        "affiliation": "Technical University of Berlin, Department of Internet Architecture and Management, Berlin, Germany",
+        "years": {
+            "2017": 1,
+            "2024": 1,
+            "2021": 1,
+            "2022": 2,
+            "2019": 1,
+            "2016": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -987,7 +2181,15 @@
         "author": "Hai-Xin Duan",
         "total": 7,
         "recent": 4,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2022": 2,
+            "2018": 1,
+            "2024": 1,
+            "2025": 1,
+            "2020": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -996,7 +2198,13 @@
         "author": "Ataberk Olgun",
         "total": 7,
         "recent": 7,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2022": 2,
+            "2026": 1,
+            "2024": 2,
+            "2025": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -1005,7 +2213,13 @@
         "author": "John F. Meyer",
         "total": 6,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1988": 2,
+            "1989": 2,
+            "2000": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1014,7 +2228,15 @@
         "author": "Tohru Kikuno",
         "total": 6,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1991": 1,
+            "2000": 1,
+            "1993": 1,
+            "1997": 1,
+            "1988": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1023,7 +2245,13 @@
         "author": "Edward J. McCluskey",
         "total": 6,
         "recent": 0,
-        "affiliation": "Stanford University, USA"
+        "affiliation": "Stanford University, USA",
+        "years": {
+            "1989": 2,
+            "1991": 2,
+            "1988": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1032,7 +2260,14 @@
         "author": "David A. Rennels",
         "total": 6,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2002": 2,
+            "1991": 1,
+            "1994": 1,
+            "2001": 1,
+            "1988": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1041,7 +2276,15 @@
         "author": "Hans-Joachim Wunderlich",
         "total": 6,
         "recent": 0,
-        "affiliation": "University of Stuttgart, Germany"
+        "affiliation": "University of Stuttgart, Germany",
+        "years": {
+            "1988": 1,
+            "2016": 1,
+            "1989": 1,
+            "2014": 1,
+            "1990": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1050,7 +2293,14 @@
         "author": "Jie Xu 0007",
         "total": 6,
         "recent": 0,
-        "affiliation": "University of Leeds, School of Computing, UK"
+        "affiliation": "University of Leeds, School of Computing, UK",
+        "years": {
+            "1989": 1,
+            "1999": 1,
+            "2007": 2,
+            "1991": 1,
+            "1995": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1059,7 +2309,15 @@
         "author": "Niraj K. Jha",
         "total": 6,
         "recent": 0,
-        "affiliation": "Princeton University, USA"
+        "affiliation": "Princeton University, USA",
+        "years": {
+            "1991": 1,
+            "1997": 1,
+            "1996": 1,
+            "1989": 1,
+            "1992": 1,
+            "1990": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1068,7 +2326,13 @@
         "author": "C. Mani Krishna 0001",
         "total": 6,
         "recent": 0,
-        "affiliation": "University of Massachusetts Amherst, USA"
+        "affiliation": "University of Massachusetts Amherst, USA",
+        "years": {
+            "2000": 1,
+            "2003": 3,
+            "1992": 1,
+            "1989": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1077,7 +2341,14 @@
         "author": "Michael Waidner",
         "total": 6,
         "recent": 0,
-        "affiliation": "National Research Center for Applied Cybersecurity ATHENE, germany"
+        "affiliation": "National Research Center for Applied Cybersecurity ATHENE, germany",
+        "years": {
+            "2021": 1,
+            "2020": 2,
+            "2018": 1,
+            "2017": 1,
+            "1990": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1086,7 +2357,14 @@
         "author": "Janak H. Patel",
         "total": 6,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1997": 1,
+            "1991": 1,
+            "1995": 1,
+            "1999": 1,
+            "1993": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -1095,7 +2373,14 @@
         "author": "Nitin H. Vaidya",
         "total": 6,
         "recent": 0,
-        "affiliation": "University of Illinois Urbana-Champaign, IL, USA"
+        "affiliation": "University of Illinois Urbana-Champaign, IL, USA",
+        "years": {
+            "1991": 1,
+            "1996": 2,
+            "1994": 1,
+            "1993": 1,
+            "2003": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1104,7 +2389,15 @@
         "author": "Willy Zwaenepoel",
         "total": 6,
         "recent": 0,
-        "affiliation": "University of Sydney, NSW, Australia"
+        "affiliation": "University of Sydney, NSW, Australia",
+        "years": {
+            "2000": 1,
+            "1992": 1,
+            "2014": 1,
+            "1994": 1,
+            "2018": 1,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1113,7 +2406,14 @@
         "author": "Arif Merchant",
         "total": 6,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2010": 1,
+            "2006": 1,
+            "1992": 1,
+            "2004": 2,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1122,7 +2422,15 @@
         "author": "Seyed Ghassem Miremadi",
         "total": 6,
         "recent": 0,
-        "affiliation": "Sharif University of Technology, Tehran, Iran"
+        "affiliation": "Sharif University of Technology, Tehran, Iran",
+        "years": {
+            "2010": 1,
+            "2003": 1,
+            "2013": 1,
+            "2009": 1,
+            "1992": 1,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1131,7 +2439,15 @@
         "author": "Heejo Lee",
         "total": 6,
         "recent": 3,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2026": 1,
+            "2018": 1,
+            "1995": 1,
+            "2025": 1,
+            "2022": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1140,7 +2456,14 @@
         "author": "Achour Most\u00e9faoui",
         "total": 6,
         "recent": 0,
-        "affiliation": "IRISA Rennes"
+        "affiliation": "IRISA Rennes",
+        "years": {
+            "1997": 1,
+            "2000": 1,
+            "2002": 1,
+            "2003": 2,
+            "1998": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1149,7 +2472,15 @@
         "author": "Priya Narasimhan",
         "total": 6,
         "recent": 0,
-        "affiliation": "Carnegie Mellon University, Pittsburgh, USA"
+        "affiliation": "Carnegie Mellon University, Pittsburgh, USA",
+        "years": {
+            "2001": 1,
+            "2010": 1,
+            "2012": 1,
+            "2002": 1,
+            "2004": 1,
+            "1999": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1158,7 +2489,14 @@
         "author": "Jonny Vinter",
         "total": 6,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2005": 1,
+            "2001": 2,
+            "2002": 1,
+            "2003": 1,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1167,7 +2505,15 @@
         "author": "Patrick Th. Eugster",
         "total": 6,
         "recent": 0,
-        "affiliation": "Universit\u00e0 della Svizzera italiana (USI), Lugano, Switzerland"
+        "affiliation": "Universit\u00e0 della Svizzera italiana (USI), Lugano, Switzerland",
+        "years": {
+            "2009": 1,
+            "2002": 1,
+            "2004": 1,
+            "2011": 1,
+            "2013": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1176,7 +2522,15 @@
         "author": "Juan-Carlos Ruiz-Garcia 0001",
         "total": 6,
         "recent": 0,
-        "affiliation": "Technical University of Valencia, Spain"
+        "affiliation": "Technical University of Valencia, Spain",
+        "years": {
+            "2012": 1,
+            "2018": 1,
+            "2006": 1,
+            "2017": 1,
+            "2004": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1185,7 +2539,13 @@
         "author": "Lixia Zhang 0001",
         "total": 6,
         "recent": 0,
-        "affiliation": "UCLA, CA, USA"
+        "affiliation": "UCLA, CA, USA",
+        "years": {
+            "2004": 2,
+            "2003": 1,
+            "2007": 2,
+            "2002": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1194,7 +2554,15 @@
         "author": "Xiangyu Zhang 0001",
         "total": 6,
         "recent": 0,
-        "affiliation": "Purdue University, West Lafayette, IN, USA"
+        "affiliation": "Purdue University, West Lafayette, IN, USA",
+        "years": {
+            "2008": 1,
+            "2010": 1,
+            "2015": 1,
+            "2011": 1,
+            "2014": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1203,7 +2571,15 @@
         "author": "Giuliano Casale",
         "total": 6,
         "recent": 2,
-        "affiliation": "Imperial College London, UK"
+        "affiliation": "Imperial College London, UK",
+        "years": {
+            "2013": 1,
+            "2009": 1,
+            "2022": 1,
+            "2008": 1,
+            "2011": 1,
+            "2024": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1212,7 +2588,14 @@
         "author": "Wenke Lee",
         "total": 6,
         "recent": 1,
-        "affiliation": "Georgia Institute of Technology, Atlanta GA, USA"
+        "affiliation": "Georgia Institute of Technology, Atlanta GA, USA",
+        "years": {
+            "2011": 2,
+            "2008": 1,
+            "2025": 1,
+            "2009": 1,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1221,7 +2604,14 @@
         "author": "Cristiano Giuffrida",
         "total": 6,
         "recent": 0,
-        "affiliation": "Vrije Universiteit Amsterdam, The Netherlands"
+        "affiliation": "Vrije Universiteit Amsterdam, The Netherlands",
+        "years": {
+            "2013": 1,
+            "2016": 2,
+            "2017": 1,
+            "2015": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1230,7 +2620,13 @@
         "author": "R\u00fcdiger Kapitza",
         "total": 6,
         "recent": 1,
-        "affiliation": "University of Erlangen-Nuremberg, Erlangen, Germany"
+        "affiliation": "University of Erlangen-Nuremberg, Erlangen, Germany",
+        "years": {
+            "2018": 2,
+            "2014": 2,
+            "2017": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1239,7 +2635,15 @@
         "author": "Mohammad Ashiqur Rahman",
         "total": 6,
         "recent": 3,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2024": 1,
+            "2016": 1,
+            "2020": 1,
+            "2014": 1,
+            "2025": 1,
+            "2023": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1248,7 +2652,13 @@
         "author": "Xing Gao 0001",
         "total": 6,
         "recent": 3,
-        "affiliation": "University of Delaware, USA"
+        "affiliation": "University of Delaware, USA",
+        "years": {
+            "2026": 2,
+            "2017": 2,
+            "2021": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1257,7 +2667,15 @@
         "author": "Saurabh Jha",
         "total": 6,
         "recent": 3,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2024": 1,
+            "2019": 1,
+            "2026": 1,
+            "2020": 1,
+            "2022": 1,
+            "2018": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1266,7 +2684,14 @@
         "author": "Gerald M. Masson",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1989": 1,
+            "1990": 1,
+            "1991": 1,
+            "1995": 1,
+            "1988": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1275,7 +2700,14 @@
         "author": "Flaviu Cristian",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1998": 1,
+            "1988": 1,
+            "1990": 1,
+            "1997": 1,
+            "1996": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1284,7 +2716,13 @@
         "author": "Pankaj Jalote",
         "total": 5,
         "recent": 0,
-        "affiliation": "Indian Institute of Technology Kanpur, India"
+        "affiliation": "Indian Institute of Technology Kanpur, India",
+        "years": {
+            "1993": 1,
+            "1989": 2,
+            "1992": 1,
+            "1988": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1293,7 +2731,14 @@
         "author": "Eiji Fujiwara",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1995": 1,
+            "1996": 1,
+            "1992": 1,
+            "1993": 1,
+            "1988": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1302,7 +2747,13 @@
         "author": "Takashi Nanya",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1995": 2,
+            "1992": 1,
+            "1988": 1,
+            "1989": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1311,7 +2762,14 @@
         "author": "Michael Nicolaidis",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1989": 1,
+            "1988": 1,
+            "1992": 1,
+            "1993": 1,
+            "1994": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1320,7 +2778,14 @@
         "author": "Bernd Becker 0001",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of Freiburg, Germany"
+        "affiliation": "University of Freiburg, Germany",
+        "years": {
+            "1993": 1,
+            "2008": 1,
+            "1995": 1,
+            "1989": 1,
+            "1999": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1329,7 +2794,14 @@
         "author": "Chita R. Das",
         "total": 5,
         "recent": 0,
-        "affiliation": "Penn State, University Park, USA"
+        "affiliation": "Penn State, University Park, USA",
+        "years": {
+            "1990": 1,
+            "2013": 1,
+            "2017": 1,
+            "2006": 1,
+            "1989": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1338,7 +2810,14 @@
         "author": "Jong Kim 0001",
         "total": 5,
         "recent": 0,
-        "affiliation": "Pohang University of Science and Technology, South Korea"
+        "affiliation": "Pohang University of Science and Technology, South Korea",
+        "years": {
+            "1997": 1,
+            "2018": 1,
+            "1995": 1,
+            "1989": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1347,7 +2826,14 @@
         "author": "Kozo Kinoshita",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1989": 1,
+            "1995": 1,
+            "1996": 1,
+            "1990": 1,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1356,7 +2842,14 @@
         "author": "Jan Torin",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1994": 1,
+            "2001": 1,
+            "2003": 1,
+            "1989": 1,
+            "1992": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1365,7 +2858,13 @@
         "author": "Nobuyasu Kanekawa",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1996": 2,
+            "1989": 1,
+            "1998": 1,
+            "1991": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1374,7 +2873,13 @@
         "author": "Santosh K. Shrivastava",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2002": 2,
+            "2004": 1,
+            "1989": 1,
+            "2000": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1383,7 +2888,14 @@
         "author": "Ronald P. Bianchini Jr.",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1993": 1,
+            "1991": 1,
+            "1998": 1,
+            "1995": 1,
+            "1990": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1392,7 +2904,14 @@
         "author": "Shambhu J. Upadhyaya",
         "total": 5,
         "recent": 0,
-        "affiliation": "State University of New York at Buffalo, Department of Computer Science and Engineering"
+        "affiliation": "State University of New York at Buffalo, Department of Computer Science and Engineering",
+        "years": {
+            "2005": 1,
+            "1990": 1,
+            "1999": 1,
+            "1997": 1,
+            "1996": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1401,7 +2920,13 @@
         "author": "Dhiraj K. Pradhan",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of Bristol, UK"
+        "affiliation": "University of Bristol, UK",
+        "years": {
+            "1991": 2,
+            "1994": 1,
+            "1996": 1,
+            "1990": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1410,7 +2935,14 @@
         "author": "Sy-Yen Kuo",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2004": 1,
+            "1990": 1,
+            "2009": 1,
+            "2003": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1419,7 +2951,14 @@
         "author": "Mustaque Ahamad",
         "total": 5,
         "recent": 1,
-        "affiliation": "Georgia Institute of Technology, Atlanta GA, USA"
+        "affiliation": "Georgia Institute of Technology, Atlanta GA, USA",
+        "years": {
+            "2004": 1,
+            "2021": 1,
+            "1990": 1,
+            "2026": 1,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1428,7 +2967,14 @@
         "author": "Richard W. Buskens",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1998": 1,
+            "1993": 1,
+            "1991": 1,
+            "2004": 1,
+            "1995": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1437,7 +2983,14 @@
         "author": "Inhwan Lee",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1993": 1,
+            "2001": 1,
+            "1996": 1,
+            "1991": 1,
+            "1994": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1446,7 +2999,14 @@
         "author": "Alex Orailoglu",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of California, San Diego, USA"
+        "affiliation": "University of California, San Diego, USA",
+        "years": {
+            "2009": 1,
+            "2007": 1,
+            "1992": 1,
+            "1993": 1,
+            "1997": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1455,7 +3015,14 @@
         "author": "Keith Marzullo",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of California, San Diego, USA"
+        "affiliation": "University of California, San Diego, USA",
+        "years": {
+            "2002": 1,
+            "2000": 1,
+            "2003": 1,
+            "2005": 1,
+            "1993": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1464,7 +3031,13 @@
         "author": "Chandra M. R. Kintala",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1999": 1,
+            "2003": 1,
+            "1995": 2,
+            "1993": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1473,7 +3046,13 @@
         "author": "Vincent Nicomette",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2021": 2,
+            "2018": 1,
+            "1995": 1,
+            "2015": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1482,7 +3061,14 @@
         "author": "Andreas Steininger",
         "total": 5,
         "recent": 0,
-        "affiliation": "TU Wien, Vienna, Austria"
+        "affiliation": "TU Wien, Vienna, Austria",
+        "years": {
+            "2006": 1,
+            "2009": 1,
+            "1999": 1,
+            "1997": 1,
+            "1995": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1491,7 +3077,12 @@
         "author": "Diamantino Costa",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2000": 2,
+            "2002": 2,
+            "1996": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1500,7 +3091,14 @@
         "author": "Timothy K. Tsai",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1998": 1,
+            "2000": 1,
+            "1996": 1,
+            "2012": 1,
+            "2004": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1509,7 +3107,14 @@
         "author": "Emmanuelle Anceaume",
         "total": 5,
         "recent": 0,
-        "affiliation": "IRISA, Rennes, France"
+        "affiliation": "IRISA, Rennes, France",
+        "years": {
+            "2001": 1,
+            "2011": 1,
+            "2014": 1,
+            "1997": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1518,7 +3123,13 @@
         "author": "Silvano Chiaradonna",
         "total": 5,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2022": 1,
+            "2000": 2,
+            "2011": 1,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1527,7 +3138,14 @@
         "author": "Felicita Di Giandomenico",
         "total": 5,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2022": 1,
+            "2000": 1,
+            "2001": 1,
+            "2011": 1,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1536,7 +3154,14 @@
         "author": "Lorenzo Strigini",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2004": 1,
+            "2021": 1,
+            "1998": 1,
+            "2001": 1,
+            "2003": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1545,7 +3170,12 @@
         "author": "Raphael R. Some",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2000": 1,
+            "2002": 3,
+            "2001": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1554,7 +3184,14 @@
         "author": "Sushil Jajodia",
         "total": 5,
         "recent": 0,
-        "affiliation": "George Mason University, Fairfax, Virginia, USA"
+        "affiliation": "George Mason University, Fairfax, Virginia, USA",
+        "years": {
+            "2000": 1,
+            "2019": 1,
+            "2012": 1,
+            "2021": 1,
+            "2006": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1563,7 +3200,14 @@
         "author": "Navjot Singh 0001",
         "total": 5,
         "recent": 0,
-        "affiliation": "Avaya Labs, Basking Ridge, NJ, USA"
+        "affiliation": "Avaya Labs, Basking Ridge, NJ, USA",
+        "years": {
+            "2000": 1,
+            "2011": 1,
+            "2008": 1,
+            "2004": 1,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1572,7 +3216,14 @@
         "author": "Arshad Jhumka",
         "total": 5,
         "recent": 1,
-        "affiliation": "University of Warwick, Coventry, UK"
+        "affiliation": "University of Warwick, Coventry, UK",
+        "years": {
+            "2023": 1,
+            "2001": 1,
+            "2021": 1,
+            "2011": 1,
+            "2002": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1581,7 +3232,14 @@
         "author": "Jack W. Davidson",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of Virginia, Charlottesville, USA"
+        "affiliation": "University of Virginia, Charlottesville, USA",
+        "years": {
+            "2001": 1,
+            "2008": 1,
+            "2021": 1,
+            "2015": 1,
+            "2017": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1590,7 +3248,14 @@
         "author": "Jun Xu 0003",
         "total": 5,
         "recent": 0,
-        "affiliation": "Google Inc., Mountain View, CA, USA"
+        "affiliation": "Google Inc., Mountain View, CA, USA",
+        "years": {
+            "2003": 1,
+            "2002": 1,
+            "2001": 1,
+            "2005": 1,
+            "2004": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1599,7 +3264,13 @@
         "author": "Peter Kemper",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2010": 1,
+            "2005": 2,
+            "2002": 1,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1608,7 +3279,14 @@
         "author": "Daniel Massey",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2004": 1,
+            "2012": 1,
+            "2007": 1,
+            "2002": 1,
+            "2003": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1617,7 +3295,14 @@
         "author": "Jo\u00e3o Dur\u00e3es",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2003": 1,
+            "2007": 1,
+            "2010": 1,
+            "2019": 1,
+            "2004": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1626,7 +3311,14 @@
         "author": "Bojan Cukic",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2005": 1,
+            "2004": 1,
+            "2014": 1,
+            "2010": 1,
+            "2003": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1635,7 +3327,14 @@
         "author": "Fran\u00e7ois Ta\u00efani",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2004": 1,
+            "2003": 1,
+            "2015": 1,
+            "2018": 1,
+            "2005": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1644,7 +3343,14 @@
         "author": "Anand Sivasubramaniam",
         "total": 5,
         "recent": 0,
-        "affiliation": "Pennsylvania State University, University Park, USA"
+        "affiliation": "Pennsylvania State University, University Park, USA",
+        "years": {
+            "2003": 1,
+            "2005": 1,
+            "2006": 1,
+            "2004": 1,
+            "2008": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1653,7 +3359,13 @@
         "author": "Ludmila Cherkasova",
         "total": 5,
         "recent": 0,
-        "affiliation": "Arm Research, Austin, TX, USA"
+        "affiliation": "Arm Research, Austin, TX, USA",
+        "years": {
+            "2004": 1,
+            "2008": 2,
+            "2011": 1,
+            "2006": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1662,7 +3374,13 @@
         "author": "Yu-Sung Wu",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2005": 1,
+            "2013": 1,
+            "2004": 2,
+            "2009": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1671,7 +3389,14 @@
         "author": "Michael Grottke",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2006": 1,
+            "2010": 1,
+            "2007": 1,
+            "2013": 1,
+            "2005": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1680,7 +3405,14 @@
         "author": "Cristina Nita-Rotaru",
         "total": 5,
         "recent": 0,
-        "affiliation": "Northeastern University, Boston, MA, USA"
+        "affiliation": "Northeastern University, Boston, MA, USA",
+        "years": {
+            "2013": 1,
+            "2017": 1,
+            "2006": 1,
+            "2015": 1,
+            "2011": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1689,7 +3421,14 @@
         "author": "Kaustubh R. Joshi",
         "total": 5,
         "recent": 0,
-        "affiliation": "AT&amp;T Labs, San Ramon, CA, USA"
+        "affiliation": "AT&amp;T Labs, San Ramon, CA, USA",
+        "years": {
+            "2010": 1,
+            "2016": 1,
+            "2012": 1,
+            "2006": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1698,7 +3437,14 @@
         "author": "Jo\u00e3o Leit\u00e3o 0001",
         "total": 5,
         "recent": 0,
-        "affiliation": "Universidade Nova de Lisboa, Lisbon, Portugal"
+        "affiliation": "Universidade Nova de Lisboa, Lisbon, Portugal",
+        "years": {
+            "2018": 1,
+            "2016": 1,
+            "2017": 1,
+            "2010": 1,
+            "2007": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1707,7 +3453,14 @@
         "author": "Tao Li 0006",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of Florida, Department of Electrical and Computer Engineering, Gainesville, FL, USA"
+        "affiliation": "University of Florida, Department of Electrical and Computer Engineering, Gainesville, FL, USA",
+        "years": {
+            "2008": 1,
+            "2017": 1,
+            "2015": 1,
+            "2010": 1,
+            "2011": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1716,7 +3469,13 @@
         "author": "Eric Rozier",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2009": 2,
+            "2012": 1,
+            "2015": 1,
+            "2008": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1725,7 +3484,14 @@
         "author": "XiaoFeng Wang 0001",
         "total": 5,
         "recent": 1,
-        "affiliation": "Nanyang Technological University (NTU), College of Computing and Data Science (CCDS), Singapore"
+        "affiliation": "Nanyang Technological University (NTU), College of Computing and Data Science (CCDS), Singapore",
+        "years": {
+            "2021": 1,
+            "2010": 1,
+            "2017": 1,
+            "2024": 1,
+            "2008": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1734,7 +3500,14 @@
         "author": "Zhiqiang Lin 0001",
         "total": 5,
         "recent": 0,
-        "affiliation": "Ohio State University, Department of Computer Science and Engineering, Columbus, OH, USA"
+        "affiliation": "Ohio State University, Department of Computer Science and Engineering, Columbus, OH, USA",
+        "years": {
+            "2008": 1,
+            "2015": 1,
+            "2010": 1,
+            "2013": 1,
+            "2019": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1743,7 +3516,13 @@
         "author": "Nicolas Schiper",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2017": 1,
+            "2014": 2,
+            "2008": 1,
+            "2010": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1752,7 +3531,14 @@
         "author": "Ga\u00ebl Thomas 0001",
         "total": 5,
         "recent": 0,
-        "affiliation": "Telecom SudParis"
+        "affiliation": "Telecom SudParis",
+        "years": {
+            "2009": 1,
+            "2015": 1,
+            "2010": 1,
+            "2021": 1,
+            "2013": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1761,7 +3547,14 @@
         "author": "Roberto Perdisci",
         "total": 5,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2015": 1,
+            "2017": 1,
+            "2011": 1,
+            "2009": 1,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1770,7 +3563,13 @@
         "author": "Anne Remke",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of M\u00fcnster, Germany"
+        "affiliation": "University of M\u00fcnster, Germany",
+        "years": {
+            "2017": 1,
+            "2013": 2,
+            "2010": 1,
+            "2015": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1779,7 +3578,14 @@
         "author": "Zhou Li 0001",
         "total": 5,
         "recent": 1,
-        "affiliation": "University of California Irvine, Henry Samueli School of Engineering, CA, USA"
+        "affiliation": "University of California Irvine, Henry Samueli School of Engineering, CA, USA",
+        "years": {
+            "2010": 1,
+            "2018": 1,
+            "2020": 1,
+            "2023": 1,
+            "2015": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1788,7 +3594,14 @@
         "author": "Murali Annavaram",
         "total": 5,
         "recent": 0,
-        "affiliation": "University of Southern California, Los Angeles, USA"
+        "affiliation": "University of Southern California, Los Angeles, USA",
+        "years": {
+            "2014": 1,
+            "2010": 1,
+            "2013": 1,
+            "2015": 1,
+            "2011": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1797,7 +3610,14 @@
         "author": "Siva Kumar Sastry Hari",
         "total": 5,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2021": 1,
+            "2019": 1,
+            "2018": 1,
+            "2012": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1806,7 +3626,14 @@
         "author": "Catello Di Martino",
         "total": 5,
         "recent": 1,
-        "affiliation": "University of Naples Federico II, Italy"
+        "affiliation": "University of Naples Federico II, Italy",
+        "years": {
+            "2024": 1,
+            "2018": 1,
+            "2015": 1,
+            "2012": 1,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1815,7 +3642,13 @@
         "author": "Fengwei Zhang",
         "total": 5,
         "recent": 1,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2013": 1,
+            "2020": 1,
+            "2018": 2,
+            "2024": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1824,7 +3657,12 @@
         "author": "Len Bass",
         "total": 5,
         "recent": 0,
-        "affiliation": "Carnegie Mellon University, Pittsburgh, USA"
+        "affiliation": "Carnegie Mellon University, Pittsburgh, USA",
+        "years": {
+            "2014": 3,
+            "2015": 1,
+            "2016": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1833,7 +3671,13 @@
         "author": "Saurabh Gupta 0002",
         "total": 5,
         "recent": 0,
-        "affiliation": "Intel Labs"
+        "affiliation": "Intel Labs",
+        "years": {
+            "2016": 1,
+            "2015": 1,
+            "2018": 2,
+            "2014": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1842,7 +3686,14 @@
         "author": "Homa Alemzadeh",
         "total": 5,
         "recent": 2,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2022": 1,
+            "2016": 1,
+            "2025": 1,
+            "2020": 1,
+            "2021": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1851,7 +3702,14 @@
         "author": "Pramod Bhatotia",
         "total": 5,
         "recent": 2,
-        "affiliation": "Technical University of Munich, Germany"
+        "affiliation": "Technical University of Munich, Germany",
+        "years": {
+            "2022": 1,
+            "2024": 1,
+            "2017": 1,
+            "2016": 1,
+            "2019": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1860,7 +3718,12 @@
         "author": "Lannan Luo",
         "total": 5,
         "recent": 2,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2016": 1,
+            "2019": 2,
+            "2026": 2
+        }
     },
     {
         "anchor": "ranking",
@@ -1869,7 +3732,14 @@
         "author": "Luis Garcia 0001",
         "total": 5,
         "recent": 1,
-        "affiliation": "University of Utah, Kahlert School of Computing"
+        "affiliation": "University of Utah, Kahlert School of Computing",
+        "years": {
+            "2025": 1,
+            "2016": 1,
+            "2018": 1,
+            "2019": 1,
+            "2020": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1878,7 +3748,13 @@
         "author": "Haya Schulmann",
         "total": 5,
         "recent": 0,
-        "affiliation": "Goethe University Frankfurt, Frankfurt am Main, Germany"
+        "affiliation": "Goethe University Frankfurt, Frankfurt am Main, Germany",
+        "years": {
+            "2021": 1,
+            "2020": 2,
+            "2018": 1,
+            "2017": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1887,7 +3763,14 @@
         "author": "Timothy Tsai 0002",
         "total": 5,
         "recent": 1,
-        "affiliation": "NVIDIA Corporation, Santa Clara, CA, USA"
+        "affiliation": "NVIDIA Corporation, Santa Clara, CA, USA",
+        "years": {
+            "2021": 1,
+            "2019": 1,
+            "2020": 1,
+            "2018": 1,
+            "2022": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1896,7 +3779,13 @@
         "author": "Xiaojiang Du",
         "total": 5,
         "recent": 2,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "2023": 1,
+            "2022": 1,
+            "2019": 2,
+            "2020": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1905,7 +3794,13 @@
         "author": "Abdullah Giray Yaglik\u00e7i",
         "total": 5,
         "recent": 5,
-        "affiliation": "ETH Z\u00fcrich, Switzerland"
+        "affiliation": "ETH Z\u00fcrich, Switzerland",
+        "years": {
+            "2026": 1,
+            "2022": 1,
+            "2024": 2,
+            "2025": 1
+        }
     },
     {
         "anchor": "ranking",
@@ -1914,6 +3809,12 @@
         "author": "Vishwani D. Agrawal",
         "total": 4,
         "recent": 0,
-        "affiliation": ""
+        "affiliation": "",
+        "years": {
+            "1990": 1,
+            "1988": 1,
+            "1992": 1,
+            "1989": 1
+        }
     }
 ]
