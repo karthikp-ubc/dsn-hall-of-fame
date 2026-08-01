@@ -62,6 +62,19 @@
 			color: #52514e;
 			margin-top: 8px;
 		}
+		#selectionSummary {
+			font-size: 13px;
+			color: #52514e;
+			margin-top: 2px;
+		}
+		#chartNote {
+			font-size: 12px;
+			color: #898781;
+			margin-top: 8px;
+		}
+		th.col-select, td.col-select { width: 32px; text-align: center; }
+		#rank:not(.compare-mode) .col-select { display: none; }
+		#rank .col-select input[type="checkbox"] { cursor: pointer; }
 		th.sortable { cursor: pointer; user-select: none; }
 		th.sortable:hover { background: #e1e0d9; }
 		th.sortable .arrow { font-size: 11px; opacity: 0.6; margin-left: 4px; }
@@ -177,11 +190,20 @@
 					<label>Graph</label>
 					<div class="preset-row" id="chartModeRow">
 						<button type="button" data-mode="trend">Trend</button>
-						<button type="button" data-mode="compare">Compare top 6</button>
+						<button type="button" data-mode="compare">Compare</button>
+					</div>
+				</div>
+				<div class="control-group" id="compareControls" style="display:none">
+					<label>Quick select</label>
+					<div class="preset-row" id="topNRow">
+						<button type="button" data-topn="5">Top 5</button>
+						<button type="button" data-topn="10">Top 10</button>
+						<button type="button" id="clearSelectionBtn">Clear</button>
 					</div>
 				</div>
 			</div>
 			<div id="resultSummary"></div>
+			<div id="selectionSummary" style="display:none"></div>
 		</div>
 
 		<!-- Graph -->
@@ -190,6 +212,7 @@
 				<div id="chartCanvasWrap">
 					<canvas id="rankingChart"></canvas>
 				</div>
+				<div id="chartNote"></div>
 			</div>
 		</div>
 
@@ -198,6 +221,7 @@
 			<table class="w3-table-all" id="rank">
 				<thead>
 				<tr>
+					<th class="col-select"></th>
 					<th class="sortable" data-sort="rank"><b>Rank</b><span class="arrow"></span></th>
 					<th class="sortable" data-sort="author"><b>Name</b><span class="arrow"></span></th>
 					<th class="sortable" data-sort="papers"><b>Papers</b><span class="arrow"></span></th>
@@ -226,6 +250,7 @@
 		</dialog>
 
 		<iframe id="myIframe" onload="getLastMod()" src="ranking.json" style="display:none;"> </iframe>
+		<script type="text/javascript" src="logic.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
