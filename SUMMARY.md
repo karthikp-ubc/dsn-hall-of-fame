@@ -13,6 +13,3 @@ A high-level summary of recent changes to the DSN Hall of Fame site and crawler:
 5. **Added an automated test suite.** There were previously no tests at all; now both the crawler and the website have one, so future changes can be checked automatically instead of by hand.
 
 6. **Removed unrelated leftover code.** An old, unused tool for a different conference's hall of fame (and the dead code it left behind) had been sitting in the repo since the DSN version was first forked from it — cleaned that out to reduce clutter for whoever touches this next.
-
-**Live demo:** https://karthikp-ubc.github.io/dsn-hall-of-fame/dsn-hof.html
-**Repo:** https://github.com/karthikp-ubc/dsn-hall-of-fame
