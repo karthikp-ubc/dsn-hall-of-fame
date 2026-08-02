@@ -8,6 +8,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
 	<style>
+		/* Shared design tokens — also read by app.js via getComputedStyle so Chart.js styling
+		   stays in sync with the CSS instead of duplicating these hex values in JS. */
+		:root {
+			--ink-primary: #0b0b0b;
+			--ink-secondary: #52514e;
+			--ink-muted: #898781;
+			--gridline: #e1e0d9;
+			--surface: #fcfcfb;
+			--border: #c3c2b7;
+			--accent: #2a78d6;
+		}
 		table {
 			border: 0pt solid black;
 			cellpadding: 0;
@@ -36,7 +47,7 @@
 		#controls label {
 			font-size: 12px;
 			font-weight: bold;
-			color: #52514e;
+			color: var(--ink-secondary);
 			text-transform: uppercase;
 			letter-spacing: 0.02em;
 		}
@@ -51,55 +62,55 @@
 			gap: 4px;
 		}
 		.search-row input {
-			border: 1px solid #c3c2b7;
+			border: 1px solid var(--border);
 			border-radius: 4px;
 			width: 200px;
 		}
 		.search-row button {
-			border: 1px solid #c3c2b7;
-			background: #fcfcfb;
+			border: 1px solid var(--border);
+			background: var(--surface);
 			border-radius: 4px;
 			cursor: pointer;
 			padding: 4px 8px;
-			color: #52514e;
+			color: var(--ink-secondary);
 			line-height: 1;
 		}
 		.preset-row { display: flex; gap: 6px; }
 		.preset-row button, #chartModeRow button {
-			border: 1px solid #c3c2b7;
-			background: #fcfcfb;
+			border: 1px solid var(--border);
+			background: var(--surface);
 			border-radius: 4px;
 			cursor: pointer;
 		}
 		.preset-row button.active, #chartModeRow button.active {
-			background: #2a78d6;
+			background: var(--accent);
 			color: #fff;
-			border-color: #2a78d6;
+			border-color: var(--accent);
 		}
 		#resultSummary {
 			font-size: 13px;
-			color: #52514e;
+			color: var(--ink-secondary);
 			margin-top: 8px;
 		}
 		#selectionSummary {
 			font-size: 13px;
-			color: #52514e;
+			color: var(--ink-secondary);
 			margin-top: 2px;
 		}
 		#chartNote {
 			font-size: 12px;
-			color: #898781;
+			color: var(--ink-muted);
 			margin-top: 8px;
 		}
 		th.col-select, td.col-select { width: 32px; text-align: center; }
 		#rank:not(.compare-mode) .col-select { display: none; }
 		#rank .col-select input[type="checkbox"] { cursor: pointer; }
 		th.sortable { cursor: pointer; user-select: none; }
-		th.sortable:hover { background: #e1e0d9; }
+		th.sortable:hover { background: var(--gridline); }
 		th.sortable .arrow { font-size: 11px; opacity: 0.6; margin-left: 4px; }
 		#chartCard {
-			background: #fcfcfb;
-			border: 0.5px solid #c3c2b7;
+			background: var(--surface);
+			border: 0.5px solid var(--border);
 			border-radius: 4px;
 			padding: 16px;
 			margin-bottom: 16px;
@@ -111,7 +122,7 @@
 			border: none;
 			padding: 0;
 			font: inherit;
-			color: #2a78d6;
+			color: var(--accent);
 			cursor: pointer;
 			text-align: left;
 		}
@@ -135,21 +146,21 @@
 			border: none;
 			font-size: 22px;
 			line-height: 1;
-			color: #898781;
+			color: var(--ink-muted);
 			cursor: pointer;
 			padding: 4px;
 		}
-		.modal-close:hover { color: #0b0b0b; }
-		.modal-affiliation { color: #52514e; margin: 0 0 16px; }
+		.modal-close:hover { color: var(--ink-primary); }
+		.modal-affiliation { color: var(--ink-secondary); margin: 0 0 16px; }
 		.modal-stats {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 20px;
 			font-size: 13px;
-			color: #52514e;
+			color: var(--ink-secondary);
 			margin-bottom: 20px;
 		}
-		.modal-stats strong { color: #0b0b0b; font-size: 15px; display: block; }
+		.modal-stats strong { color: var(--ink-primary); font-size: 15px; display: block; }
 		.modal-chart-wrap { position: relative; height: 220px; }
 	</style>
 	</head>

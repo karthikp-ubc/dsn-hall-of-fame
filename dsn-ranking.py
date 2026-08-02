@@ -8,6 +8,8 @@ import time
 import datetime
 import pickle
 
+from pub_years import get_pub_year, get_year_breakdown
+
 ## Constants
 OUTPUT_DIR = './output'               # Output directory
 MIN_PAGES = 4                         # Min pages for a paper
@@ -38,35 +40,6 @@ def get_recent_pubs(pubs):
         if get_pub_year(key) >= RECENT:
             cc += 1
     return cc
-
-def get_pub_year(key):
-    """Extract the publication year from a dblp key (e.g. `conf/dsn/ArlatKL88` -> 1988).
-    Args:
-        key: dblp publication key.
-
-    Returns:
-        The 4-digit publication year as an int.
-    """
-    try:
-        yyy = int(key[len(key) - 2:])
-    except ValueError:
-        yyy = int(key[len(key) - 3:len(key) - 1])
-    return yyy + 1900 if yyy > 50 else yyy + 2000
-
-
-def get_year_breakdown(pubs):
-    """Compute the number of publications per year for an author.
-    Args:
-        pubs: List of publications for the author.
-
-    Returns:
-        A dict mapping year (as string) to publication count, omitting years with 0 publications.
-    """
-    counts = {}
-    for key in pubs:
-        year = str(get_pub_year(key))
-        counts[year] = counts.get(year, 0) + 1
-    return counts
 
 
 def update_authors(pid, name, key):
@@ -252,7 +225,8 @@ def main():
     for pid in authorList:
         author = authorList[pid]
         author['total'] = len (author["pubs"])
-        author['recent'] = get_recent_pubs(author["pubs"])
+        author['years'] = get_year_breakdown(author["pubs"])
+        author['recent'] = sum(count for year, count in author['years'].items() if int(year) >= RECENT)
         authorList[pid] = author
 
         outFile.write("{}\t{}\t{}\t{}\n".format(author["name"], author["total"], author["recent"], author["pubs"]))
@@ -293,7 +267,7 @@ def main():
             'total': value['total'],
             'recent': value['recent'],
             'affiliation': affiliation,
-            'years': get_year_breakdown(value['pubs'])
+            'years': value['years']
         })
 
         i+=1

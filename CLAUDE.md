@@ -1,9 +1,12 @@
 # CLAUDE.md — DSN Hall of Fame website
 
 This file documents the front-end (`dsn-hof.html`, `logic.js`, `app.js`) and its
-data pipeline, for whoever (human or Claude) works on this next. It does not cover
-`isca.py` / `isca-parallel.py` / `ISCA-README.rst`, which are a separate, unrelated
-tool bundled in this repo.
+data pipeline, for whoever (human or Claude) works on this next.
+
+(This repo used to also bundle `isca.py` / `isca-parallel.py` / `ISCA-README.rst`,
+an unrelated ISCA Hall of Fame tool that `dsn-ranking.py` was originally derived
+from — see `README.rst`'s history note. Those files had no callers from or
+dependents on anything in this list and were removed as dead weight.)
 
 ## What this is
 
@@ -35,6 +38,10 @@ backfill_years.py One-off script: re-derives ranking.json's `years` field from
                    the already-crawled authorlist.json, with no network calls.
                    Use this instead of re-running dsn-ranking.py when only the
                    per-year breakdown needs updating.
+pub_years.py      get_pub_year (dblp key -> year) and get_year_breakdown
+                   (pubs -> {year: count}), shared by dsn-ranking.py and
+                   backfill_years.py. A normal, importable module — unlike
+                   dsn-ranking.py, whose hyphenated filename can't be `import`ed.
 dblp/             Vendored DBLP API client used by dsn-ranking.py.
 tests/            pytest (crawler/data pipeline) + tests/js (Node, logic.js).
 ```
@@ -50,8 +57,9 @@ DBLP  --dsn-ranking.py-->  authorlist.json  --(get_year_breakdown)-->  years fie
 ```
 
 `dsn-ranking.py` and `backfill_years.py` both compute the per-year breakdown via
-the same `get_pub_year` / `get_year_breakdown` functions (defined once in
-`dsn-ranking.py`, imported by `backfill_years.py`) — don't duplicate that logic.
+the same `get_pub_year` / `get_year_breakdown` functions, defined once in
+`pub_years.py` and imported normally by both — don't duplicate that logic or
+re-add a hyphenated-module-loader workaround to get at it from a new script.
 
 ## Front-end architecture decisions
 
@@ -97,6 +105,15 @@ the same `get_pub_year` / `get_year_breakdown` functions (defined once in
   for the adjacent-pair validation this order passes). Compare mode caps plotted
   series at 8 (`MAX_COMPARE_SERIES`) for the same reason; beyond that, `app.js`
   shows a "showing N of M" note rather than degrading the palette.
+- **Chart colors are sourced from CSS, not duplicated as separate JS hex
+  literals.** `dsn-hof.html`'s `:root` defines the shared design tokens
+  (`--ink-primary`, `--ink-secondary`, `--ink-muted`, `--gridline`, `--surface`,
+  `--border`, `--accent`) once; `app.js` reads them via `getComputedStyle` at
+  load time instead of hardcoding the same hex values. Only `CATEGORICAL`'s
+  first slot (`--accent`) is CSS-backed — the other 7 compare-mode series colors
+  exist only in JS (Chart.js line colors, not used anywhere in the page's CSS),
+  so there was nothing to deduplicate there. When adding a new shared color,
+  add the CSS variable first and read it from `app.js`, not the other way round.
 - **HTML entities in the data must be decoded before display, without
   `innerHTML`.** DBLP-sourced affiliation strings sometimes contain literal
   `&amp;` etc. `logic.js`'s `decodeEntities` handles the known entity set via

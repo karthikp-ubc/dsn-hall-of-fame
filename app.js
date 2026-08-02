@@ -1,15 +1,22 @@
 (function () {
 	'use strict';
 
-	// Palette (validated categorical order, see dataviz skill's palette.md).
-	const CATEGORICAL = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#4a3aa7', '#e34948'];
-	const SEQUENTIAL_LINE = '#2a78d6';
+	// Design tokens sourced from dsn-hof.html's :root custom properties, so the chart palette
+	// stays in sync with the page's CSS instead of duplicating the same hex values in JS.
+	const rootStyle = getComputedStyle(document.documentElement);
+	const cssColor = (name, fallback) => rootStyle.getPropertyValue(name).trim() || fallback;
+	const INK_PRIMARY = cssColor('--ink-primary', '#0b0b0b');
+	const INK_SECONDARY = cssColor('--ink-secondary', '#52514e');
+	const INK_MUTED = cssColor('--ink-muted', '#898781');
+	const GRIDLINE = cssColor('--gridline', '#e1e0d9');
+	const SURFACE = cssColor('--surface', '#fcfcfb');
+	const ACCENT = cssColor('--accent', '#2a78d6');
+
+	// Palette (validated categorical order, see dataviz skill's palette.md). Only the first slot
+	// (the page's --accent) is shared with the CSS; the rest are compare-mode-only series colors.
+	const CATEGORICAL = [ACCENT, '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#4a3aa7', '#e34948'];
+	const SEQUENTIAL_LINE = CATEGORICAL[0];
 	const SEQUENTIAL_FILL = 'rgba(42, 120, 214, 0.10)';
-	const INK_PRIMARY = '#0b0b0b';
-	const INK_SECONDARY = '#52514e';
-	const INK_MUTED = '#898781';
-	const GRIDLINE = '#e1e0d9';
-	const SURFACE = '#fcfcfb';
 
 	const MAX_COMPARE_SERIES = 8;
 
@@ -55,8 +62,13 @@
 			o2.textContent = String(y);
 			toSel.appendChild(o2);
 		}
-		fromSel.value = String(fromYear);
-		toSel.value = String(toYear);
+	}
+
+	// The single place that writes fromYear/toYear state into the two <select> elements —
+	// called from render() so every state-changing handler stays DOM-sync-free.
+	function syncYearSelects() {
+		document.getElementById('fromYear').value = String(fromYear);
+		document.getElementById('toYear').value = String(toYear);
 	}
 
 	function getFilteredRows() {
@@ -336,10 +348,11 @@
 	}
 
 	function selectTopN(n) {
+		const rows = getVisibleRows();
 		selectedAuthors.clear();
-		topNByPapers(getVisibleRows(), n).forEach((name) => selectedAuthors.add(name));
+		topNByPapers(rows, n).forEach((name) => selectedAuthors.add(name));
 		chartMode = 'compare';
-		render();
+		render(rows);
 	}
 
 	function clearSelection() {
@@ -378,9 +391,10 @@
 		}
 	}
 
-	function render() {
-		let rows = getVisibleRows();
+	function render(precomputedRows) {
+		let rows = precomputedRows || getVisibleRows();
 		rows = sortRowsBy(rows, sortKey, sortDir);
+		syncYearSelects();
 		renderTable(rows);
 		renderSummary(rows);
 		updatePresetButtons();
@@ -418,13 +432,11 @@
 		document.getElementById('fromYear').addEventListener('change', (e) => {
 			fromYear = parseInt(e.target.value, 10);
 			clampRange();
-			document.getElementById('toYear').value = String(toYear);
 			render();
 		});
 		document.getElementById('toYear').addEventListener('change', (e) => {
 			toYear = parseInt(e.target.value, 10);
 			clampRange();
-			document.getElementById('fromYear').value = String(fromYear);
 			render();
 		});
 
@@ -440,8 +452,6 @@
 				toYear = maxYear;
 				fromYear = Math.max(minYear, maxYear - span + 1);
 			}
-			document.getElementById('fromYear').value = String(fromYear);
-			document.getElementById('toYear').value = String(toYear);
 			render();
 		});
 
@@ -474,7 +484,7 @@
 					sortDir = sortDir === 'asc' ? 'desc' : 'asc';
 				} else {
 					sortKey = key;
-					sortDir = key === 'author' || key === 'affiliation' ? 'asc' : (key === 'papers' ? 'desc' : 'asc');
+					sortDir = key === 'papers' ? 'desc' : 'asc';
 				}
 				render();
 			});

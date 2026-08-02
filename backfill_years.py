@@ -4,9 +4,7 @@ every author's publication keys.
 """
 import json
 
-from importlib.machinery import SourceFileLoader
-
-dsn_ranking = SourceFileLoader('dsn_ranking', './dsn-ranking.py').load_module()
+import pub_years
 
 
 def merge_years(ranking, authorlist, get_year_breakdown):
@@ -15,7 +13,7 @@ def merge_years(ranking, authorlist, get_year_breakdown):
     Args:
         ranking: list of ranking.json entries; mutated in place.
         authorlist: authorlist.json dict (pid -> {'name', 'pubs', ...}).
-        get_year_breakdown: function(pubs) -> {year: count}, e.g. dsn_ranking.get_year_breakdown.
+        get_year_breakdown: function(pubs) -> {year: count}, e.g. pub_years.get_year_breakdown.
 
     Returns:
         List of ranking['author'] values that had no matching authorlist entry.
@@ -40,7 +38,7 @@ def main():
     with open('authorlist.json', encoding='utf-8') as f:
         authorlist = json.load(f)
 
-    missing = merge_years(ranking, authorlist, dsn_ranking.get_year_breakdown)
+    missing = merge_years(ranking, authorlist, pub_years.get_year_breakdown)
 
     if missing:
         print(f"Warning: {len(missing)} ranking entries had no authorlist match: {missing}")
